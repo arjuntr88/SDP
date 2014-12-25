@@ -1,0 +1,1 @@
+$("#main_body").removeClass("doc");

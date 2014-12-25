@@ -1,0 +1,76 @@
+
+#homePageList li {
+    height: 110px;
+}
+
+#homePageList h1 {
+    font-size: 24pt;
+}
+
+#homePageList {
+    background: #f9f9f9;
+}
+
+#homePageList img {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+#bodyIndex .ui-page {
+    background:white;
+}
+
+#headerRegAcct {
+    text-align: center;
+}
+
+#headerTwoRegAcct {
+    text-align: center;
+}
+
+#registerContent {
+    text-align: center;
+}
+
+#regAcctButton {
+    width: 60%;
+    padding-left: 20%;
+}
+
+#headingEmail {
+    text-align: center;
+}
+
+#emailContent {
+    text-align: center;
+}
+
+#emailSendButton {
+    width: 60%;
+    padding-left: 20%;
+}
+
+#privacyPolicy {
+    text-align:center;
+}
+
+#headingAnswers {
+    text-align: center;
+}
+
+#submitButton {
+    padding-left: 5%;
+    width: 90%;
+}
+
+#questionAnswers {
+    padding-left: 5%;
+    width: 90%;
+}
+
+
+.ui-li-divider e {
+    background: green;
+    color: green;
+    text: black;
+}
+

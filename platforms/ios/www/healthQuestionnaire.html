@@ -1,0 +1,274 @@
+<!-- healthQuestionnaire.html : Content to create the medical questionnaire. Questiones and answers are
+     directly hard coded into this page. To add additional questions, copy and paste the <form> section and edit the input text. -->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+        <title>Sexual Health Questionnaire</title>
+        <script src="js/jquery.js"></script>
+        <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+        <link rel="stylesheet" href="css/ythTheme6.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+        <script src="js/questionnaireAnswers.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        
+    <div id="healthQuestionnaire" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>Medical Questionnaire</h1>
+            <a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) ">Back</a>
+        </div>
+        <div data-role="content">
+            <form>
+            <fieldset data-role="controlgroup" data-type="vertical">
+               <li class="ui-li ui-li-divider ui-btn ui-bar-a ui-corner-top" id="greenBar" data-role="list-divider">1. Have you ever had sexual intercourse?</li>
+                <input type="radio" name="radio-choice-1" id="radio-choice-1a" value="Yes">
+                <label for="radio-choice-1a">Yes</label>
+                <input type="radio" name="radio-choice-1" id="radio-choice-1b" value="No">
+                <label for="radio-choice-1b">No</label>
+            </fieldset>
+            </form>
+            
+            <form>
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">2. How old were you when you had sexual intercourse for the first time?</li>
+                <input type="radio" name="radio-choice-2" id="radio-choice-2a" value="I have never had sexual intercourse">
+                <label for="radio-choice-2a">I have never had sexual intercourse</label>
+                <input type="radio" name="radio-choice-2" id="radio-choice-2b" value="11 years old or younger">
+                <label for="radio-choice-2b">11 years old or younger</label>
+                <input type="radio" name="radio-choice-2" id="radio-choice-2c" value="12 years old">
+                <label for="radio-choice-2c">12 years old</label>
+                <input type="radio" name="radio-choice-2" id="radio-choice-2d" value="13 years old">
+                <label for="radio-choice-2d">13 years old</label>
+                <input type="radio" name="radio-choice-2" id="radio-choice-2e" value="14 years old">
+                <label for="radio-choice-2e">14 years old</label>
+                <input type="radio" name="radio-choice-2" id="radio-choice-2f" value="15 years old">
+                <label for="radio-choice-2f">15 years old</label>
+                <input type="radio" name="radio-choice-2" id="radio-choice-2g" value="16 years old">
+                <label for="radio-choice-2g">16 years old</label>
+                <input type="radio" name="radio-choice-2" id="radio-choice-2h" value="17 years old or older">
+                <label for="radio-choice-2h">17 years old or older</label>
+            </fieldset>
+            </form>
+
+            <form>
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">3. During your life, with how many people have you had sexual intercourse?</li>
+                <input type="radio" name="radio-choice-3" id="radio-choice-3a" value="I have never had sexual intercourse">
+                <label for="radio-choice-3a">I have never had sexual intercourse</label>
+                <input type="radio" name="radio-choice-3" id="radio-choice-3b" value="1 person">
+                <label for="radio-choice-3b">1 person</label>
+                <input type="radio" name="radio-choice-3" id="radio-choice-3c" value="2 people">
+                <label for="radio-choice-3c">2 people</label>
+                <input type="radio" name="radio-choice-3" id="radio-choice-3d" value="3 people">
+                <label for="radio-choice-3d">3 people</label>
+                <input type="radio" name="radio-choice-3" id="radio-choice-3e" value="4 people">
+                <label for="radio-choice-3e">4 people</label>
+                <input type="radio" name="radio-choice-3" id="radio-choice-3f" value="5 people">
+                <label for="radio-choice-3f">5 people</label>
+                <input type="radio" name="radio-choice-3" id="radio-choice-3g" value="6 or more people">
+                <label for="radio-choice-3g">6 or more people</label>
+            </fieldset>
+            </form>
+
+            <form>
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">4. During the past 3 months, with how many people did you have sexual intercourse?</li>
+                <input type="radio" name="radio-choice-4" id="radio-choice-4a" value="I have never had sexual intercourse">
+                <label for="radio-choice-4a">I have never had sexual intercourse</label>
+                <input type="radio" name="radio-choice-4" id="radio-choice-4b" value="I have had sexual intercourse, but not during the past 3 months">
+                <label for="radio-choice-4b">I have had sexual intercourse, but not during the past 3 months</label>
+                <input type="radio" name="radio-choice-4" id="radio-choice-4c" value="1 person">
+                <label for="radio-choice-4c">1 person</label>
+                <input type="radio" name="radio-choice-4" id="radio-choice-4d" value="2 people">
+                <label for="radio-choice-4d">2 people</label>
+                <input type="radio" name="radio-choice-4" id="radio-choice-4e" value="3 people">
+                <label for="radio-choice-4e">3 people</label>
+                <input type="radio" name="radio-choice-4" id="radio-choice-4f" value="4 people">
+                <label for="radio-choice-4f">4 people</label>
+                <input type="radio" name="radio-choice-4" id="radio-choice-4g" value="5 people">
+                <label for="radio-choice-4g">5 people</label>
+                <input type="radio" name="radio-choice-4" id="radio-choice-4h" value="6 or more people">
+                <label for="radio-choice-4h">6 or more people</label>
+            </fieldset>
+            </form>
+
+            <form>
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">5. Did you drink alcohol or use drugs before you had sexual intercourse the last time?</li>
+                <input type="radio" name="radio-choice-5" id="radio-choice-5a" value="I have never had sexual intercourse">
+                <label for="radio-choice-5a">I have never had sexual intercourse</label>
+                <input type="radio" name="radio-choice-5" id="radio-choice-5b" value="Yes">
+                <label for="radio-choice-5b">Yes</label>
+                <input type="radio" name="radio-choice-5" id="radio-choice-5c" value="No">
+                <label for="radio-choice-5c">No</label>
+            </fieldset>
+            </form>
+            
+            <form>
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">6. The last time you had sexual intercourse, did you or your partner use a condom?</li>
+                <input type="radio" name="radio-choice-6" id="radio-choice-6a" value="I have never had sexual intercourse">
+                <label for="radio-choice-6a">I have never had sexual intercourse</label>
+                <input type="radio" name="radio-choice-6" id="radio-choice-6b" value="Yes">
+                <label for="radio-choice-6b">Yes</label>
+                <input type="radio" name="radio-choice-6" id="radio-choice-6c" value="No">
+                <label for="radio-choice-6c">No</label>
+            </fieldset>
+            </form>
+            
+            <form>
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">7. The last time you had sexual intercourse, what one method did you or your partner use to prevent pregnancy?</li>
+                <input type="radio" name="radio-choice-7" id="radio-choice-7a" value="I have never had sexual intercourse">
+                <label for="radio-choice-7a">I have never had sexual intercourse</label>
+                <input type="radio" name="radio-choice-7" id="radio-choice-7b" value="No method was used to prevent pregnancy">
+                <label for="radio-choice-7b">No method was used to prevent pregnancy</label>
+                <input type="radio" name="radio-choice-7" id="radio-choice-7c" value="Birth control pills">
+                <label for="radio-choice-7c">Birth control pills</label>
+                <input type="radio" name="radio-choice-7" id="radio-choice-7d" value="Condoms">
+                <label for="radio-choice-7d">Condoms</label>
+                <input type="radio" name="radio-choice-7" id="radio-choice-7e" value="An IUD (such as Mirena or Paragard) or impant (such as Implanon or Nexplanon)">
+                <label for="radio-choice-7e">An IUD (such as Mirena or Paragard) or impant (such as Implanon or Nexplanon)</label>
+                <input type="radio" name="radio-choice-7" id="radio-choice-7f" value="A shot (such as Depo-Provera), patch (such as Ortho Evra), or birth control ring (such as NuvaRing)">
+                <label for="radio-choice-7f">A shot (such as Depo-Provera), patch (such as Ortho Evra), or birth control ring (such as NuvaRing)</label>
+                <input type="radio" name="radio-choice-7" id="radio-choice-7g" value="Withdrawal or some other method">
+                <label for="radio-choice-7g">Withdrawal or some other method</label>
+                <input type="radio" name="radio-choice-7" id="radio-choice-7h" value="Not sure">
+                <label for="radio-choice-7h">Not sure</label>
+            </fieldset>
+            </form>
+            
+            <form>
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">8. How many of your friends who are having sexual intercourse are using condoms?</li>
+                    <input type="radio" name="radio-choice-8" id="radio-choice-8a" value="My friends are not having sexual intercourse">
+                    <label for="radio-choice-8a">My friends are not having sexual intercourse</label>
+                    <input type="radio" name="radio-choice-8" id="radio-choice-8b" value="None of my friends who are having sexual intercourse are using condoms">
+                    <label for="radio-choice-8b">None of my friends who are having sexual intercourse are using condoms</label>
+                    <input type="radio" name="radio-choice-8" id="radio-choice-8c" value="Some of my friends who are having sexual intercourse are using condoms">
+                    <label for="radio-choice-8c">Some of my friends who are having sexual intercourse are using condoms</label>
+                    <input type="radio" name="radio-choice-8" id="radio-choice-8d" value="Most or all of my friends who are having sexual intercourse are using condoms">
+                    <label for="radio-choice-8d">Most or all of my friends who are having sexual intercourse are using condoms</label>
+                </fieldset>
+            </form>
+
+           <form>
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">9. During the past 12 months, what was the main reason you did not get condoms when you needed them? (Select only one response.)</li>
+                    <input type="radio" name="radio-choice-9" id="radio-choice-9a" value="I did not need to get condoms during the past 12 months">
+                    <label for="radio-choice-9a">I did not need to get condoms during the past 12 months</label>
+                    <input type="radio" name="radio-choice-9" id="radio-choice-9b" value="I got condoms during the past 12 months whenever I needed thems">
+                    <label for="radio-choice-9b">I got condoms during the past 12 months whenever I needed them</label>
+                    <input type="radio" name="radio-choice-9" id="radio-choice-9c" value="I could not get to the places where I could get condoms">
+                    <label for="radio-choice-9c">I could not get to the places where I could get condoms</label>
+                    <input type="radio" name="radio-choice-9" id="radio-choice-9d" value="I did not know where to get condoms">
+                    <label for="radio-choice-9d">I did not know where to get condoms</label>
+                    <input type="radio" name="radio-choice-9" id="radio-choice-9e" value="I was too embarrassed to ask for or buy condoms">
+                    <label for="radio-choice-9e">I was too embarrassed to ask for or buy condoms</label>
+                    <input type="radio" name="radio-choice-9" id="radio-choice-9f" value="I could not afford to buy condoms">
+                    <label for="radio-choice-9f">I could not afford to buy condoms</label>
+                    <input type="radio" name="radio-choice-9" id="radio-choice-9g" value="Some other reason">
+                    <label for="radio-choice-9g">Some other reason</label>
+                </fieldset>
+            </form>
+            
+            <form>
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">10. Does at least one of your parents or legal guardians know you have had sexual intercourse?</li>
+                    <input type="radio" name="radio-choice-A" id="radio-choice-Aa" value="I have not had sexual intercourse">
+                    <label for="radio-choice-Aa">I have not had sexual intercourse</label>
+                    <input type="radio" name="radio-choice-A" id="radio-choice-Ab" value="Yes">
+                    <label for="radio-choice-Ab">Yes</label>
+                    <input type="radio" name="radio-choice-A" id="radio-choice-Ac" value="No">
+                    <label for="radio-choice-Ac">No</label>
+                    <input type="radio" name="radio-choice-A" id="radio-choice-Ad" value="Maybe">
+                    <label for="radio-choice-Ad">Maybe</label>
+                </fieldset>
+            </form>
+            
+            <form>
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">11. During the past 12 months, what is the main reason you have not received sexual health care services such as birth control, pregnancy testing, or STD testing? (Select only one response.)</li>
+                    <input type="radio" name="radio-choice-B" id="radio-choice-Ba" value="I have received sexual health care during the past 12 months">
+                    <label for="radio-choice-Ba">I have received sexual health care during the past 12 months</label>
+                    <input type="radio" name="radio-choice-B" id="radio-choice-Bb" value="I did not feel I needed sexual health care services during the past 12 months">
+                    <label for="radio-choice-Bb">I did not feel I needed sexual health care services during the past 12 months</label>
+                    <input type="radio" name="radio-choice-B" id="radio-choice-Bc" value="I did not know where to go for these services">
+                    <label for="radio-choice-Bc">I did not know where to go for these services</label>
+                    <input type="radio" name="radio-choice-B" id="radio-choice-Bd" value="I thought it might cost too much money to get these services">
+                    <label for="radio-choice-Bd">I thought it might cost too much money to get these services</label>
+                    <input type="radio" name="radio-choice-B" id="radio-choice-Be" value="I was afraid my parents, teachers, or someone else might find out that I had received sexual health care services">
+                    <label for="radio-choice-Be">I was afraid my parents, teachers, or someone else might find out that I had received sexual health care services</label>
+                    <input type="radio" name="radio-choice-B" id="radio-choice-Bf" value="I could not get to the places where sexual health care services were offereds">
+                    <label for="radio-choice-Bf">I could not get to the places where sexual health care services were offered</label>
+                    <input type="radio" name="radio-choice-B" id="radio-choice-Bg" value="I was too embarrassed to ask for sexual health care services">
+                    <label for="radio-choice-Bg">I was too embarrassed to ask for sexual health care services</label>
+                    <input type="radio" name="radio-choice-B" id="radio-choice-Bh" value="Some other reason">
+                    <label for="radio-choice-Bh">Some other reason</label>
+                </fieldset>
+            </form>
+            
+            <form>
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <li class="ui-li ui-li-divider ui-btn ui-bar-a ui-corner-top" id="greenBar" data-role="list-divider">12. Have you ever been physically forced to have sexual intercourse when you did not want to?</li>
+                    <input type="radio" name="radio-choice-C" id="radio-choice-Ca" value="Yes">
+                    <label for="radio-choice-Ca">Yes</label>
+                    <input type="radio" name="radio-choice-C" id="radio-choice-Cb" value="No">
+                    <label for="radio-choice-Cb">No</label>
+                </fieldset>
+            </form>
+            
+            <form>
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">13. During the past 12 months, how many times did someone you were dating or going out with physically hurt you on purpose? (Count such things as being hit, slammed into something, or injured with an object or weapon.)</li>
+                    <input type="radio" name="radio-choice-D" id="radio-choice-Da" value="I did not date or go out with anyone during the past 12 months">
+                    <label for="radio-choice-Da">I did not date or go out with anyone during the past 12 months</label>
+                    <input type="radio" name="radio-choice-D" id="radio-choice-Db" value="0 times">
+                    <label for="radio-choice-Db">0 times</label>
+                    <input type="radio" name="radio-choice-D" id="radio-choice-Dc" value="1 time">
+                    <label for="radio-choice-Dc">1 time</label>
+                    <input type="radio" name="radio-choice-D" id="radio-choice-Dd" value="2 or 3 times">
+                    <label for="radio-choice-Dd">2 or 3 times</label>
+                    <input type="radio" name="radio-choice-D" id="radio-choice-De" value="4 or 5 times">
+                    <label for="radio-choice-De">4 or 5 times</label>
+                    <input type="radio" name="radio-choice-D" id="radio-choice-Df" value="6 or more times">
+                    <label for="radio-choice-Df">6 or more times</label>
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <li class="ui-li ui-li-divider ui-btn ui-bar-b ui-corner-top" id="greenBar" data-role="list-divider">14. During the past 12 months, how many times did someone you were dating or going out with force you to do sexual things that you did not want to do? (Count such things as kissing, touching, or being physically forced to have sexual intercourse.)</li>
+                    <input type="radio" name="radio-choice-E" id="radio-choice-Ea" value="I did not date or go out with anyone during the past 12 months">
+                    <label for="radio-choice-Ea">I did not date or go out with anyone during the past 12 months</label>
+                    <input type="radio" name="radio-choice-E" id="radio-choice-Eb" value="0 times">
+                    <label for="radio-choice-Eb">0 times</label>
+                    <input type="radio" name="radio-choice-E" id="radio-choice-Ec" value="1 time">
+                    <label for="radio-choice-Ec">1 time</label>
+                    <input type="radio" name="radio-choice-E" id="radio-choice-Ed" value="2 or 3 times">
+                    <label for="radio-choice-Ed">2 or 3 times</label>
+                    <input type="radio" name="radio-choice-E" id="radio-choice-Ee" value="4 or 5 times">
+                    <label for="radio-choice-Ee">4 or 5 times</label>
+                    <input type="radio" name="radio-choice-E" id="radio-choice-Ef" value="6 or more times">
+                    <label for="radio-choice-Ef">6 or more times</label>
+                </fieldset>
+            </form>
+
+
+            <a href="./questionnaireAnswers.html" rel="external" id="submitAnswers" data-role="button">View Answers</a>
+            </br>
+        </div>
+    </div>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
