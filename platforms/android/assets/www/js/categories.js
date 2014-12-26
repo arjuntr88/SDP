@@ -8,16 +8,22 @@ var usedResource = Array();
 var k = 0;
 var counter = 0;
 
-function onDeviceReady() {
-    $('#busy').show();
-    $("#sendMail").click(function() {
-
-    var status = $('input[type="checkbox"]').filter('.resCheckBox').map(function(){
-    return $(this).is(':checked') ? 1 : 0;
-  });
-    $('#homeList').append("<p>"+status+"</p>");
+$(function  (){
+    $("#sendMail").bind("click",function() {
+      
+      var checkRes = $('#homeList').find('input[name=resCheck]:checked').map(function(){
+        return  this.value;
+      }).get();
+      $('#homeList').append("checkRes");
+      console.log("here");
+      console.log("here:"+checkRes);
+    });
 
 });
+
+function onDeviceReady() {
+    $('#busy').show();
+    
     getCurrentLocation();
 }
 
