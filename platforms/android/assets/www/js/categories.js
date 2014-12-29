@@ -16,9 +16,12 @@ $(function  (){
       }).get();
       $('#homeList').append("checkRes");
       console.log("here");
-      console.log("here:"+checkRes);
+      console.log("here:"+checkRes.length);
     });
-
+    /*$(document.body).bind("click", '.subRow', function(event, ui) {
+      $(this).find("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
+      console.log("click" + $(this).html);
+    });*/
 });
 
 function onDeviceReady() {
@@ -168,17 +171,26 @@ function rigResources(dataPassed2) {
         var catName = categories[counter].substring(0, 1).toUpperCase() + categories[counter].substring(1);
         
         if(resource[1] == resourcesToDisplay[counter]){
-            $('#homeList').append('<div>' +
+            $('#homeList').append(function () {
+              return $('<div>' +
                                   '<ul data-role="listview" data-inset="true">' +
                                   '<li id="greenBar1">' + catName + '</li>' +
-                                  '<li class="subRow">' +
+                                  '<li class="subRow" id="'+resource[1]+'">' +
                                   '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.png" />' +
                                   '<h2>' + resource[1] + '</h2>' +
                                   '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
-                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+'" />'+'</li>' +
-                                  '</ul></div>').trigger("create");
+                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+","+resource[2]+","+resource[3]+'" />'+'</li>' +
+                                  '</ul></div>').bind("click", '#'+resource[1], function(event, ui) {
+                                              $(this).find("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
+                                              console.log("click" + $(this).html());
+                                  });
+                                }).trigger("create");
         
         }
+       /* $(document.body).bind("click", '#'+resource[1], function(event, ui) {
+          $(this).children("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
+          console.log("click" + $(this).attr("id"));
+        });*/
       
     }
     counter = counter + 1;

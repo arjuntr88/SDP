@@ -28,3 +28,6 @@ proguard/
 
 # Log Files
 *.log
+
+# android folder under the platforms, which should be generated
+android/
