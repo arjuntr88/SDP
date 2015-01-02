@@ -16,7 +16,8 @@ $(function  (){
       var checkRes = $('#homeList').find('input[name=resCheck]:checked').map(function(){
         return  this.value;
       }).get();
-      console.log("here:"+checkRes.length);
+      localStorage.setItem("selectedResources", JSON.stringify(checkRes));
+      
     });
     
 });
@@ -179,9 +180,6 @@ function rigResources(dataPassed2) {
                                   '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+","+resource[2]+","+resource[3]+'" />'+'</li>' +
                                   '</ul></div>').bind("click", '#'+resource[1], function(event, ui) {
                                               $(this).find("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
-                                              console.log("click" + $(this).html());
-                                              // on click for div to check the inner checkbox input
-
                                   });
                                 }).trigger("create");
         

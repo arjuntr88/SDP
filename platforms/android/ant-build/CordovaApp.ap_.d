@@ -30,6 +30,7 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/cordova_plugins.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/css \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/emailResults.html \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/emailSelectedResources.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/examples \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/healthQuestionnaire.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/homePage.html \
@@ -38,6 +39,8 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/index.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/plugins \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/providerQuestionaire.html \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/providerQuestionaire.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/questionnaireAnswers.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/registerAccount.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/res \
@@ -526,6 +529,7 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/categories.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/dbFetch.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/emailRecipients.js \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/js/emailResources.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/healthQuestions.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/homePage.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/index.js \
