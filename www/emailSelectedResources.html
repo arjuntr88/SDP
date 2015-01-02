@@ -1,0 +1,59 @@
+
+<!-- emailResults.html : creates html content for emailing the medical questionnaire results to the health
+    provider after the homeless you takes the questionnaire. -->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+        <link rel="stylesheet" href="css/homePage.css" />
+        <link rel="stylesheet" href="css/ythTheme6.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <title>Email</title>
+    </head>
+    
+    <style type = "text/css">
+    	.doc{display:none;}
+    </style>
+
+    <body id = "main_body" class = "doc">
+        <div id="homePage" data-role="page">
+            <div data-role="header" data-position="fixed">
+                <h1>Email resources</h1>
+                <a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+            </div>
+            <div data-role="content">
+                <!-- Create email content box and input fields-->
+                <form id="emailDiv">
+                    <ul data-role="listview" data-inset="true">
+                        <li data-role="fieldcontain" class="listViewId">
+                            <h1 id="emailH1"> Email selected resources </h1>
+                            <p id="emailP"> The selected resourceswill be emailed to the provided address</p>
+                            <input type="text" name="emailAddr" id="emailAddr1" class="emailTexField" placeholder="Email Address" />
+                            <div id="emailButtonDiv">
+                                <a class="emailButton2" id="emailButton" data-role="button"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                <!-- Create footer for user to select finish button and return to home page -->s
+                <div id="footerBottom" data-role="footer" class="ui-bar">
+                    <a href="./homePage.html" data-role="button" data-icon="arrow-r" class="ui-btn-right" style="float: right; margin-right:10px;">Finish</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+        
+        <script type="text/javascript" src="js/emailResources.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
