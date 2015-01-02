@@ -1,20 +1,14 @@
 /* gets the information to send the results in an email to the health provider.*/
-
-
-document.addEventListener("deviceready", onDeviceReady, false);
+alert("here!");
+$("#main_body").removeClass("doc");
 
 
 /*set the email address and content and take the user into the mail application*/
-console.log("file loaded");
+
 $(function  (){
     
     // bind for the send mail button to make a post request with all the itmes required to be provided
     // it calls[post request] the backend to send mail with the data
-    
-    
-});
-
-function onDeviceReady() {
     $("#emailButton").bind("click",function() {
       console.log("init");
       var emailAddress;
@@ -32,4 +26,5 @@ function onDeviceReady() {
                         window.location.href = mailToAddress;
       
     });
-}
+    
+});

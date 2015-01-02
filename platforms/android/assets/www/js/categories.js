@@ -7,18 +7,19 @@ var categories = ["clothing", "employment", "food", "healthcare", "housing"];
 var usedResource = Array();
 var k = 0;
 var counter = 0;
-
+alert("asdsad");
 $(function  (){
+    // bind for the send mail button to make a post request with all the itmes required to be provided
+    // it calls[post request] the backend to send mail with the data
     $("#sendMail").bind("click",function() {
       
       var checkRes = $('#homeList').find('input[name=resCheck]:checked').map(function(){
         return  this.value;
       }).get();
-      $('#homeList').append("checkRes");
-      console.log("here");
-      console.log("here:"+checkRes);
+      localStorage.setItem("selectedResources", JSON.stringify(checkRes));
+      
     });
-
+    
 });
 
 function onDeviceReady() {
@@ -168,18 +169,22 @@ function rigResources(dataPassed2) {
         var catName = categories[counter].substring(0, 1).toUpperCase() + categories[counter].substring(1);
         
         if(resource[1] == resourcesToDisplay[counter]){
-            $('#homeList').append('<div>' +
+            $('#homeList').append(function () {
+              return $('<div>' +
                                   '<ul data-role="listview" data-inset="true">' +
                                   '<li id="greenBar1">' + catName + '</li>' +
-                                  '<li class="subRow">' +
+                                  '<li class="subRow" id="'+resource[1]+'">' +
                                   '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.png" />' +
                                   '<h2>' + resource[1] + '</h2>' +
                                   '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
-                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+'" />'+'</li>' +
-                                  '</ul></div>').trigger("create");
+                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+","+resource[2]+","+resource[3]+'" />'+'</li>' +
+                                  '</ul></div>').bind("click", '#'+resource[1], function(event, ui) {
+                                              $(this).find("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
+                                  });
+                                }).trigger("create");
         
         }
-      
+       
     }
     counter = counter + 1;
 }

@@ -2,6 +2,10 @@
 <!-- emailResults.html : creates html content for emailing the medical questionnaire results to the health
     provider after the homeless you takes the questionnaire. -->
 
+
+<!-- emailResults.html : creates html content for emailing the medical questionnaire results to the health
+    provider after the homeless you takes the questionnaire. -->
+
 <html>
     <head>
         <meta charset="utf-8" />
@@ -16,7 +20,7 @@
     </head>
     
     <style type = "text/css">
-    	.doc{display:none;}
+        .doc{display:none;}
     </style>
 
     <body id = "main_body" class = "doc">
@@ -34,12 +38,12 @@
                             <p id="emailP"> The selected resourceswill be emailed to the provided address</p>
                             <input type="text" name="emailAddr" id="emailAddr1" class="emailTexField" placeholder="Email Address" />
                             <div id="emailButtonDiv">
-                                <a class="emailButton2" id="emailButton" data-role="button"></a>
+                                <a  class="emailButton2" id="emailButton" data-role="button"></a>
                             </div>
                         </li>
                     </ul>
                 </form>
-                <!-- Create footer for user to select finish button and return to home page -->s
+                <!-- Create footer for user to select finish button and return to home page -->
                 <div id="footerBottom" data-role="footer" class="ui-bar">
                     <a href="./homePage.html" data-role="button" data-icon="arrow-r" class="ui-btn-right" style="float: right; margin-right:10px;">Finish</a>
                 </div>
@@ -48,8 +52,8 @@
 
         <script src="js/jquery.js"></script>
         <script src="js/jquery.mobile-1.0rc1.min.js"></script>
-        
-        <script type="text/javascript" src="js/emailResources.js"></script>
+        <script src="text/javascript" src="js/healthQuestions.js"></script>
+        <script src="js/emailResources.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">

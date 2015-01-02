@@ -1,5 +1,5 @@
 /* gets the information to send the results in an email to the health provider.*/
-
+alert("here!");
 $("#main_body").removeClass("doc");
 
 var quizQuestions = [[2, "Have you filled this form before?", "Yes", "No"],
