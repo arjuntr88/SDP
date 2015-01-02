@@ -1,7 +1,4 @@
 
-<!-- emailResults.html : creates html content for emailing the medical questionnaire results to the health
-    provider after the homeless you takes the questionnaire. -->
-
 
 <!-- emailResults.html : creates html content for emailing the medical questionnaire results to the health
     provider after the homeless you takes the questionnaire. -->
@@ -26,7 +23,7 @@
     <body id = "main_body" class = "doc">
         <div id="homePage" data-role="page">
             <div data-role="header" data-position="fixed">
-                <h1>Email resources</h1>
+                <h1>Email Results</h1>
                 <a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
             </div>
             <div data-role="content">
@@ -34,16 +31,16 @@
                 <form id="emailDiv">
                     <ul data-role="listview" data-inset="true">
                         <li data-role="fieldcontain" class="listViewId">
-                            <h1 id="emailH1"> Email selected resources </h1>
+                            <h1 id="emailH1">  Email selected resources  </h1>
                             <p id="emailP"> The selected resourceswill be emailed to the provided address</p>
                             <input type="text" name="emailAddr" id="emailAddr1" class="emailTexField" placeholder="Email Address" />
                             <div id="emailButtonDiv">
-                                <a  class="emailButton2" id="emailButton" data-role="button"></a>
+                                <a class="emailButton2" id="emailButton" data-role="button"></a>
                             </div>
                         </li>
                     </ul>
                 </form>
-                <!-- Create footer for user to select finish button and return to home page -->
+                <!-- Create footer for user to select finish button and return to home page -->s
                 <div id="footerBottom" data-role="footer" class="ui-bar">
                     <a href="./homePage.html" data-role="button" data-icon="arrow-r" class="ui-btn-right" style="float: right; margin-right:10px;">Finish</a>
                 </div>

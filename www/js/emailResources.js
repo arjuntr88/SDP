@@ -9,7 +9,7 @@ $(function  (){
     
     // bind for the send mail button to make a post request with all the itmes required to be provided
     // it calls[post request] the backend to send mail with the data
-    $("#emailButton").bind("click",function() {
+    $("#emailButton").click(function() {
       console.log("init");
       var emailAddress;
                         var messageBody="";
