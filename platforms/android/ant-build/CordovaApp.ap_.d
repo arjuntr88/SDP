@@ -25,6 +25,7 @@
 /media/data/scu/yth/SDP3/platforms/android/ant-build/res/drawable-xxhdpi/icon.png \
 /media/data/scu/yth/SDP3/platforms/android/assets/www \
 /media/data/scu/yth/SDP3/platforms/android/assets/_where-is-www.txt \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/confidentialityText.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/config.xml \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/cordova.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/cordova_plugins.js \
@@ -527,6 +528,7 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/img/ythWelcomeGreen.png \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/img/yth_tag_rgb.jpg \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/categories.js \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/js/confidentiality.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/dbFetch.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/emailRecipients.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/emailResources.js \

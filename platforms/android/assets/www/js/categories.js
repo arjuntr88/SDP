@@ -89,14 +89,26 @@ function setResource(dataPassed) {
         usedResource.push(closestResource[1]);
     
     var catName = categories[k].substring(0, 1).toUpperCase() + categories[k].substring(1);
-    $('#homeList').append('<div>' +
-                          '<ul data-role="listview" data-inset="true">' +
-                          '<li id="greenBar1">' + catName + '</li>' +
-                          '<li>' +
-                          '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.png" />' +
-                          '<h2>' + closestResource[1] + '</h2>' +
-                          '<p>' + closestResource[2] + ', ' + closestResource[3] + ', ' + closestResource[6] + '</p></li>' +
-                          '</ul></div>').trigger("create");
+    $('#homeList').append(function () {
+              return $('<div>' +
+                                  '<ul data-role="listview" data-inset="true">' +
+                                  '<li id="greenBar1">' + catName + '</li>' +
+                                  '<li class="subRow" id="'+resource[1]+'">' +
+                                  '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.png" />' +
+                                  '<h2>' + resource[1] + '</h2>' +
+                                  '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
+                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+","+resource[2]+","+resource[3]+'" style="visibility: hidden" />'+'</li>' +
+                                  '</ul></div>').bind("click", '#'+resource[1], function(event, ui) {
+                                            if($(this).find("input[type='checkbox']").prop('checked')){
+                                              $(this).find("input[type='checkbox']").prop('checked', false).checkboxradio('refresh');
+                                              $(this).find(".subRow").css("background-color","white");
+                                            }
+                                            else{
+                                              $(this).find("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
+                                              $(this).find(".subRow").css("background-color","#97c83c");
+                                            }
+                                  });
+                                }).trigger("create");
     
     //update the counter to track what category it is on
     k = k + 1;
@@ -177,9 +189,16 @@ function rigResources(dataPassed2) {
                                   '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.png" />' +
                                   '<h2>' + resource[1] + '</h2>' +
                                   '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
-                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+","+resource[2]+","+resource[3]+'" />'+'</li>' +
+                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+","+resource[2]+","+resource[3]+'" style="visibility: hidden" />'+'</li>' +
                                   '</ul></div>').bind("click", '#'+resource[1], function(event, ui) {
+                                            if($(this).find("input[type='checkbox']").prop('checked')){
+                                              $(this).find("input[type='checkbox']").prop('checked', false).checkboxradio('refresh');
+                                              $(this).find(".subRow").css("background-color","white");
+                                            }
+                                            else{
                                               $(this).find("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
+                                              $(this).find(".subRow").css("background-color","#97c83c");
+                                            }
                                   });
                                 }).trigger("create");
         
