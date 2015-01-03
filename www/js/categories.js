@@ -7,7 +7,7 @@ var categories = ["clothing", "employment", "food", "healthcare", "housing"];
 var usedResource = Array();
 var k = 0;
 var counter = 0;
-alert("asdsad");
+
 $(function  (){
     // bind for the send mail button to make a post request with all the itmes required to be provided
     // it calls[post request] the backend to send mail with the data
@@ -17,7 +17,7 @@ $(function  (){
         return  this.value;
       }).get();
       localStorage.setItem("selectedResources", JSON.stringify(checkRes));
-      
+      window.location.href = "./emailSelectedResources.html";
     });
     
 });
