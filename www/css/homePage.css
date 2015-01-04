@@ -64,9 +64,10 @@ body {
   border-radius: 3px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 25px !important;
   background: #97c83c !important;
-  padding: 10px 20px 10px 20px;
+  background-size: 155% !important;
+  /*padding: 10px 20px 10px 20px;*/
   text-decoration: none;
 }
 
