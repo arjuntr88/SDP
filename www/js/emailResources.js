@@ -13,16 +13,21 @@ $(function  (){
                         var emailAddress;
                         var messageBody="";
                         emailAddress = $("#emailAddr1").val();
+                        var email_check = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i;
+                        if(!email_check.test(emailAddress)){
+                            navigator.notification.alert("Please enter a valid email", function(){}, "StreetConnect for Youth", "Ok");
+                            return;
+                        }
                         var answersArray = localStorage.getItem("selectedResources");
                         var answerValues = JSON.parse(answersArray);
-                        for(var i=0; i<=answerValues; i++){
+                        for(var i=0; i<=answerValues.length; i++){
                             messageBody = messageBody + answerValues[i] + "%0A%0A";
                         }
                         
                          $.ajax({
-                             data: {mailto: emailAddress, message: messageBody,subject : "Resources selected"},
-                             type:"post",
-                             url: 'http://salauno.engr.scu.edu/emailReferral.php',
+                             data: {mailto: emailAddress, message: messageBody, subject : "Resources selected"},
+                             type:"POST",
+                             url: 'http://salauno.engr.scu.edu/emailReferrals.php',
                              error: function(data){
                                 navigator.notification.alert("Unable to send email right now, Continue?", function(){window.location.href = "./homePage.html";}, "StreetConnect for Youth", "Ok");
                                 //alert(Text);
