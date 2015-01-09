@@ -1,0 +1,58 @@
+<!-- homePage.html : content to create the initial screen seen upon page load. Here the user can select to
+    either view tools and resources or go to the medical questionnaire. -->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+        <link rel="stylesheet" href="css/homePage.css" />
+        <link rel="stylesheet" href="css/ythTheme6.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <title>Home</title>
+    </head>
+    <style type = "text/css">
+    	.doc{display:none;}
+    </style>
+    <body id = "main_body" class = "doc">
+        <div id="homePage" data-role="page" data-theme="c">
+            <div data-role="content">
+                
+                <!-- StreetConnect Logo-->
+                <div id="scForProviders">
+                    <img src="./img/SCforProvidersLogo.png" width = "70%" />
+                </div>
+                
+                <!-- Create tools and resources button -->
+                <div id="toolsResBar" class="mainBar">
+                    <a class="homePageButton" href="./toolsResources.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Tools and Resources </a>
+                </div>
+                
+                <!-- Create medical questionnaire button -->
+                <div id="medQuestBar" class="mainBar">
+                    <a class="homePageButton" href="./confidentialityText.html" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Medical Questionare </a>
+                </div>
+
+                <!-- Best practices/provider resources button -->
+                <div id="bestPractBar" class="mainBar">
+                    <a class="homePageButton" href="#" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Best Practices and provider resources </a>
+                </div>
+
+                <div id="homelessYouthBar" class="mainBar">
+                    <a class="homePageButton" href="#" rel="external" data-role="button" data-icon="arrow-r" data-iconpos="right">Homeless Youth data </a>
+                </div>
+
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+        <script type="text/javascript" src="js/homePage.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

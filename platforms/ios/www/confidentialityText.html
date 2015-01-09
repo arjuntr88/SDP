@@ -1,0 +1,89 @@
+<!-- toolsResources.html : Content to display the featured resources in the tools and resources section of the application. The featured resources display one resources from each of the categories that is closest to the users current location. -->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+        <link rel="stylesheet" href="css/homePage.css" />
+        <link rel="stylesheet" href="css/ythTheme6.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
+        <title>Email</title>
+    </head>
+    
+    <body>
+        <div id="homePage" data-role="page">
+            <div data-role="header" data-position="fixed">
+                <h1>Confidentiality</h1>
+                <a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+            </div>
+            <div data-role="content">
+                <div id="featuredResourcesLogo">
+                    <img src="./img/featuredResImg2.png" width="95%"/>
+                </div>
+                
+                <div id="featuredResourcesWrapper">
+                    <div id="mainText" data-iscroll>
+                        <p>First and foremost are native mobile applications that use HTML/CSS/Javascript in a webview for their user interface. It is especially desirable that such applications reproduce a "native" look and feel. A native look and feel is impossible to achieve without an embeddable scroller with native-like physics and scrollbar action.
+
+                        While iScroll4 is useful to help achieve this goal, it is difficult to use along with jQuery Mobile. It is not an easy task to integrate iScroll4 with jQuery Mobile - at least not correctly and efficiently.
+
+                        My intention is that this widget will handle 80% of use cases with very minimal effort.
+
+                        The most common need for iScroll in jQuery Mobile projects is to have a fixed header and footer with a single vertically-scrollable area in-between.
+
+                        This can be accomplished by simply including the required files in the and adding a single data-iscroll attribute to your content .
+
+                        If you need to do something different than this, this widget will probably work for you, but you will probably have to set some options and dig into the documentation a bit.
+
+                        Because the primary target for this widget is native mobile applications, it has a large number of configurable options, which may be usable only in certain target environments. I want you to be able to tailor the widget to your specific needs when you are using it in specific, known environments.
+
+                        Secondarily, it is intended to support websites that will be viewed on mobile browsers, and "full-screen" websites and "web apps" for mobile devices (i.e. "Add to Home Screen" in Mobile Safari).
+
+                        Finally, it supports desktop browsers, and is regularly tested using current versions of FireFox, Safari, Chrome, and Opera. It generally works well in these browsers, and fortunately hasn't needed a lot of work to acheive compatability.
+
+                        This widget is not well-tested on Android devices, and I very much appreciate assistance in ferreting-out Android issues. It is tested regularly in all three modes (Mobile Safari, full-screen, and UIWebView) on iPad 1(5.1), iPad 3(5.1), iPhone 4 (4.3.5) and iPhone 4S(5.1).         If you need to do something different than this, this widget will probably work for you, but you will probably have to set some options and dig into the documentation a bit.
+
+                        Because the primary target for this widget is native mobile applications, it has a large number of configurable options, which may be usable only in certain target environments. I want you to be able to tailor the widget to your specific needs when you are using it in specific, known environments.
+
+                        Secondarily, it is intended to support websites that will be viewed on mobile browsers, and "full-screen" websites and "web apps" for mobile devices (i.e. "Add to Home Screen" in Mobile Safari).
+
+                        Finally, it supports desktop browsers, and is regularly tested using current versions of FireFox, Safari, Chrome, and Opera. It generally works well in these browsers, and fortunately hasn't needed a lot of work to acheive compatability.
+
+                        This widget is not well-tested on Android devices, and I very much appreciate assistance in ferreting-out Android issues. It is tested regularly in all three modes (Mobile Safari, full-screen, and UIWebView) on iPad 1(5.1), iPad 3(5.1), iPhone 4 (4.3.5) and iPhone 4S(5.1).         If you need to do something different than this, this widget will probably work for you, but you will probably have to set some options and dig into the documentation a bit.
+
+                        Because the primary target for this widget is native mobile applications, it has a large number of configurable options, which may be usable only in certain target environments. I want you to be able to tailor the widget to your specific needs when you are using it in specific, known environments.
+
+                        Secondarily, it is intended to support websites that will be viewed on mobile browsers, and "full-screen" websites and "web apps" for mobile devices (i.e. "Add to Home Screen" in Mobile Safari).
+
+                        Finally, it supports desktop browsers, and is regularly tested using current versions of FireFox, Safari, Chrome, and Opera. It generally works well in these browsers, and fortunately hasn't needed a lot of work to acheive compatability.
+
+                        This widget is not well-tested on Android devices, and I very much appreciate assistance in ferreting-out Android issues. It is tested regularly in all three modes (Mobile Safari, full-screen, and UIWebView) on iPad 1(5.1), iPad 3(5.1), iPhone 4 (4.3.5) and iPhone 4S(5.1).First and foremost are native mobile applications that use HTML/CSS/Javascript in a webview for their user interface. It is especially desirable that such applications reproduce a "native" look and feel. A native look and feel is impossible to achieve without an embeddable scroller with native-like physics and scrollbar action.
+
+                        While iScroll4 is useful to help achieve this goal, it is difficult to use along with jQuery Mobile. It is not an easy task to integrate iScroll4 with jQuery Mobile - at least not correctly and efficiently.
+
+                        
+                        
+                        </p>
+                    </div>
+                    <label><input type="checkbox" name="agreeCheckbox" /> I agree </label>
+                </div>
+                
+                <div id="btn"><a class="regButton" id="continue" data-role="button" ></a></div>
+            </div>
+        </div>
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+        <script type="text/javascript" src="js/confidentiality.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
