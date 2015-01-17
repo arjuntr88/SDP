@@ -14,7 +14,6 @@
         <script src="js/jquery.js"></script>
         <script src="js/jquery.mobile-1.0rc1.min.js"></script>
         <script src="js/healthQuestions.js"></script>
-        <script src="js/questionnaireAnswers.js"></script>
         <script src="js/submitResults.js"></script>
         <title>Home</title>
         
@@ -25,6 +24,7 @@
         <script>
             var answersArray = localStorage.getItem("arrayValues");
             var answerValues = JSON.parse(answersArray);
+            console.log(answersArray);
         </script>
         
         <div id="homePage" data-role="page">
@@ -40,181 +40,7 @@
                 
                 <!-- display answers to questionnaire-->
                 <div id="questionAnswers">
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("1. " + quizQuestions[0][1]);</script></li>
-                        <li><script>
-                            if(answerValues[0] == null){
-                                document.write("No Answer Selected");
-                            }
-                            else {
-                                document.write(answerValues[0]);
-                            }
-                        </script></li>
-                    </ul>
                    
-                   <ul data-role="listview" data-inset="true">
-                       <li data-role="list-divider" id="greenBar"><script>document.write("2. " + quizQuestions[1][1]);</script></li>
-                       <li><script>
-
-                         if(answerValues[1] == null){
-                              document.write("No Answer Selected");
-                          }
-                            else{
-                                document.write(answerValues[1]);
-                            }
-                       
-                       </script></li>
-                   </ul>
-                   
-                   <ul data-role="listview" data-inset="true">
-                       <li data-role="list-divider" id="greenBar"><script>document.write("3. " + quizQuestions[2][1]);</script></li>
-                       <li><script>
-
-                           if(answerValues[2] == null){
-                               document.write("No Answer Selected");
-                           }
-                            else {
-                                document.write(answerValues[2]);
-                            }
-                      </script></li>
-                   </ul>
-                   
-                   <ul data-role="listview" data-inset="true">
-                       <li data-role="list-divider" id="greenBar"><script>document.write("4. " + quizQuestions[3][1]);</script></li>
-                       <li><script>
-
-                          if(answerValues[3] == null){
-                              document.write("No Answer Selected");
-                          }
-                            else {
-                                document.write(answerValues[3]);
-                            }
-                       </script></li>
-                   </ul>
-
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("5. " + quizQuestions[4][1]);</script></li>
-                        <li><script>
-
-                            if(answerValues[4] == null){
-                                document.write("No Answer Selected");
-                            }
-                            else {
-                                document.write(answerValues[4]);
-                            }
-
-                            </script></li>
-                    </ul>
-
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("6. " + quizQuestions[5][1]);</script></li>
-                        <li><script>
-                            
-                            if(answerValues[5] == null){
-                                document.write("No Answer Selected");
-                            }
-                            else {
-                                document.write(answerValues[5]);
-                            }
-
-                        </script></li>
-                    </ul>
-
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("7. " + quizQuestions[6][1]);</script></li>
-                        <li><script>
-                        if(answerValues[6] == null){
-                                document.write("No Answer Selected");
-                            }
-                        else{
-                            document.write(answerValues[6]);
-                        }
-                        </script></li>
-                    </ul>
-
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("8. " + quizQuestions[7][1]);</script></li>
-                        <li><script>
-                            if(answerValues[7] == null){
-                                document.write("No Answer Selected");
-                            }
-                        else{
-                                document.write(answerValues[7]);
-                        }
-                        </script></li>
-                    </ul>
-
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("9. " + quizQuestions[8][1]);</script></li>
-                        <li><script>
-                            if(answerValues[8] == null){
-                                document.write("No Answer Selected");
-                            }
-                        else{
-                            document.write(answerValues[8]);
-                        }
-                        </script></li>
-                    </ul>
-
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("10. " + quizQuestions[9][1]);</script></li>
-                        <li><script>
-                            if(answerValues[9] == null){
-                                document.write("No Answer Selected");
-                            }
-                        else{
-                            document.write(answerValues[9]);
-                        }
-                        </script></li>
-                    </ul>
-                    
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("11. " + quizQuestions[10][1]);</script></li>
-                        <li><script>
-                            if(answerValues[10] == null){
-                                document.write("No Answer Selected");
-                            }
-                        else{
-                            document.write(answerValues[10]);
-                        }
-                        </script></li>
-                    </ul>
-
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("12. " + quizQuestions[11][1]);</script></li>
-                        <li><script>
-                            if(answerValues[11] == null){
-                                document.write("No Answer Selected");
-                            }
-                        else{
-                            document.write(answerValues[11]);
-                        }
-                        </script></li>
-                    </ul>
-                    
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("13. " + quizQuestions[12][1]);</script></li>
-                        <li><script>
-                            if(answerValues[12] == null){
-                                document.write("No Answer Selected");
-                            }
-                        else{
-                            document.write(answerValues[12]);
-                        }
-                        </script></li>
-                    </ul>
-                    <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider" id="greenBar"><script>document.write("14. " + quizQuestions[13][1]);</script></li>
-                        <li><script>
-                            if(answerValues[13] == null){
-                                document.write("No Answer Selected");
-                            }
-                        else{
-                            document.write(answerValues[13]);
-                        }
-                        </script></li>
-                    </ul>
-
                 </div>
                 
                 <!-- buttons to submit or change answers-->
