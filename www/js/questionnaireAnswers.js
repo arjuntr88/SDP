@@ -29,9 +29,8 @@ $(function  (){
 
   
   $("#submitAnswers").click(function() {
-    var forms = $("[id^='question-'");
     var answersArray = [];
-    $("[id^='question-'").each(function(){
+    $("[id*=question-]").each(function(){
       var question = $(this).find("li").text();
       var answer = $(this).find("input:checked").val();
       if( answer!=null)
@@ -41,8 +40,8 @@ $(function  (){
         //answersArray.push({ question: answer });
 
     });
-    
     localStorage.setItem("answersArray", JSON.stringify(answersArray));
+    
     for(i=0; i<numOfQuestions; i++){
        var index = radioPrefixes[i];
        var inputName = "input[name*=radio-choice-"+index+"]:checked";

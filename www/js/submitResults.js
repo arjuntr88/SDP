@@ -4,7 +4,7 @@ $(function  (){
 	var answers = localStorage.getItem("answersArray");
 	console.log(answersArray);
 	var answersArray = JSON.parse(answers);
-	console.log(answersArray);
+	console.log('here:'+answersArray);
 	for (var i = 0; i < answersArray.length; i++) {
 		answerArray = answersArray[i].split(':');
 		var listString = '<ul data-role="listview" data-inset="true">'+
