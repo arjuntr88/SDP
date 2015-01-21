@@ -60,6 +60,10 @@ $(function  (){
         /*store the answers into localStorage to be accessed on another page*/
         localStorage.setItem("arrayValues", JSON.stringify(arrayJSON));
 
+
+
+
+
   });
 });
 

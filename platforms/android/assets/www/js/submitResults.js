@@ -2,7 +2,6 @@
 
 $(function  (){
 	var answers = localStorage.getItem("answersArray");
-	console.log(answersArray);
 	var answersArray = JSON.parse(answers);
 	console.log('here:'+answersArray);
 	for (var i = 0; i < answersArray.length; i++) {
@@ -15,6 +14,26 @@ $(function  (){
 
 
   $("#submit").click(function() {
-     navigator.notification.alert("Thank You. Please return the tablet to your service provide to complete the questionnaire.",function(){window.location.href = "./emailResults.html";}, "Questionnaire Complete", "Ok");
-   });
+  	var answers = localStorage.getItem("answersArray");	
+  	//inserting the answers in database
+	$.ajax({
+//
+			type: 'POST',
+			url: 'http://salauno.engr.scu.edu/storeAnswers.php',
+			data: {
+			answers1:answers,
+			
+			},
+			async: true,
+			cache: false,
+			success: function(result) {
+			navigator.notification.alert("Thank You. Please return the tablet to your service provide to complete the questionnaire.",function(){window.location.href = "./emailResults.html";}, "Questionnaire Complete", "Ok");
+   			
+			console.log("stored answers");
+
+			}
+
+		});
+		});
+     
   });

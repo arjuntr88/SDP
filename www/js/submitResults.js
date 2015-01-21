@@ -2,7 +2,6 @@
 
 $(function  (){
 	var answers = localStorage.getItem("answersArray");
-	console.log(answersArray);
 	var answersArray = JSON.parse(answers);
 	console.log('here:'+answersArray);
 	for (var i = 0; i < answersArray.length; i++) {
@@ -15,7 +14,7 @@ $(function  (){
 
 
   $("#submit").click(function() {
-  	var answers = localStorage.getItem("answersArray");
+  	var answers = localStorage.getItem("answersArray");	
   	//inserting the answers in database
 	$.ajax({
 //
