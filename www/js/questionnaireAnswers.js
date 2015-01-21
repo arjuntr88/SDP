@@ -60,23 +60,7 @@ $(function  (){
         /*store the answers into localStorage to be accessed on another page*/
         localStorage.setItem("arrayValues", JSON.stringify(arrayJSON));
 
-//inserting the answers in database
-$.ajax({
-//
-			type: 'POST',
-			url: 'http://salauno.engr.scu.edu/storeAnswers.php',
-			data: {
-			answers1:answers,
-			
-			},
-			async: true,
-			cache: false,
-			success: function(result) {
 
-			console.log("stored answers");
-
-				}
-		});
 
 
 
