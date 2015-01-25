@@ -35,7 +35,7 @@ function loadData(data){
         '<li data-role="list-divider" id="greenBar">'+ i++ +'. '+k+'</li>';
         for (var j = 0; j <= v.length - 1; j++) {
          var percentage = (v[j][1]*100/total);
-         listString+='<li>'+ v[j][0] +' : '+percentage.toFixed(2)+'%</li>';
+         listString+='<li>'+ v[j][0] +' : '+percentage.toFixed(0)+'%</li>';
         }
         listString+='</ul>';
         $("#main-content").append(listString).trigger("create");

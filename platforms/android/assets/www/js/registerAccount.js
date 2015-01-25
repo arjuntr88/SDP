@@ -21,6 +21,7 @@ $(function  (){
         if (lengthEmail==0){
             
             window.location.href = "./healthQuestionnaire.html";
+            condition2=1;
         }
         if (lengthEmail > 0){
         //get the current email addresses currently stored in the sql database
@@ -44,7 +45,7 @@ function getPhoneNumbers(){
     
   $.ajax({
          type:"GET",
-         url: 'http://students.engr.scu.edu/~kdedoshk/seniorDesign/ythUsersDb.php',
+         url: 'http://salauno.engr.scu.edu/ythUsersDb.php',
          dataType: 'json',
          success: function(data)
          {
@@ -80,7 +81,7 @@ function registerNumber(phoneNumberToAdd, emailToAdd){
   $.ajax({
          data: {phnum:phoneNumberToAdd, email:emailToAdd},
          type:"post",
-         url: 'http://students.engr.scu.edu/~kdedoshk/seniorDesign/insertYthUser.php',
+         url: 'http://salauno.engr.scu.edu/insertYthUser.php',
          success: function(data){
          navigator.notification.alert("Thank you for registering!", function(){window.location.href = "./healthQuestionnaire.html";}, "StreetConnect for Youth", "Ok");
          }
