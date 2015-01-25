@@ -15,14 +15,16 @@ $(function  (){
 
   $("#submit").click(function() {
   	var answers = localStorage.getItem("answersArray");	
+  	var providerEmail = localStorage.getItem("providerEmail");
+  	console.log(answers);
   	//inserting the answers in database
 	$.ajax({
 //
 			type: 'POST',
 			url: 'http://salauno.engr.scu.edu/storeAnswers.php',
 			data: {
-			answers1:answers,
-			
+				answers1:answers,
+				email: providerEmail
 			},
 			async: true,
 			cache: false,

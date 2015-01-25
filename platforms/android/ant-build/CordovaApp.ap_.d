@@ -25,6 +25,8 @@
 /media/data/scu/yth/SDP3/platforms/android/ant-build/res/drawable-xxhdpi/icon.png \
 /media/data/scu/yth/SDP3/platforms/android/assets/www \
 /media/data/scu/yth/SDP3/platforms/android/assets/_where-is-www.txt \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/aggregation.html \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/bestPractices.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/confidentialityText.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/config.xml \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/cordova.js \
@@ -40,6 +42,7 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/index.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/plugins \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/providerAccount.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/providerQuestionaire.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/providerQuestionaire.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/questionnaireAnswers.html \
@@ -48,6 +51,7 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/spec \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/spec.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/toolsResources.html \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/zipcode.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/css/homePage.css \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/css/images \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/css/index.css \
@@ -527,6 +531,7 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/img/ythWelcome.png \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/img/ythWelcomeGreen.png \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/img/yth_tag_rgb.jpg \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/js/aggregation.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/categories.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/confidentiality.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/dbFetch.js \
@@ -537,9 +542,12 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/index.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/jquery.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/jquery.mobile-1.0rc1.min.js \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/js/proverAccount.js \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/js/providerAccount.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/questionnaireAnswers.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/registerAccount.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/js/submitResults.js \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/js/zipcode.js \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/plugins/de.appplant.cordova.plugin.email-composer \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/plugins/emailcomposer \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/plugins/EmailComposer-Deprecated.js \

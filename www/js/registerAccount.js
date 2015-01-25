@@ -5,16 +5,30 @@ $(function  (){
 
     var accountInfo = [];
     var lengthNumber = $("#phoneNumberEntry").val().length;
+    var lengthEmail = $("#emailAddressEntry").val().length;
     var condition1 = 0;
     var condition2 = 0;
                              
     /*make sure the inputed phone number is 10 digits*/
-    if(lengthNumber != 10)
+    if(lengthNumber!=0 && lengthNumber != 10)
     {
         navigator.notification.alert("Invalid phone number. Please enter your 10 digit phone number with no spaces.", function(){}, "Oops!", "OK");
         condition2 = 1;
     }
-                
+            
+    if(lengthNumber == 0){
+
+        if (lengthEmail==0){
+            
+            window.location.href = "./healthQuestionnaire.html";
+            condition2=1;
+        }
+        if (lengthEmail > 0){
+        //get the current email addresses currently stored in the sql database
+        registerNumber();
+        //getPhoneNumbers();
+        }
+    }    
     if(condition2 == 0)
     {
         /*get the current phone numbers currently stored in the sql database*/
@@ -31,12 +45,12 @@ function getPhoneNumbers(){
     
   $.ajax({
          type:"GET",
-         url: 'http://students.engr.scu.edu/~kdedoshk/seniorDesign/ythUsersDb.php',
+         url: 'http://salauno.engr.scu.edu/ythUsersDb.php',
          dataType: 'json',
          success: function(data)
          {
             var inputNumber = $("#phoneNumberEntry").val();
-         
+            var inputEmail = ("#emailAddressEntry").val();
             for(var i=0; i < data.length; i++){
                 var phoneNum = data[i];
                 if(phoneNum == inputNumber){
@@ -50,7 +64,7 @@ function getPhoneNumbers(){
             }
             else{
                 /*if they are not already in the database, add the phone number*/
-                registerNumber(inputNumber);
+                registerNumber(inputNumber, inputEmail);
             }
         },
          
@@ -63,11 +77,11 @@ function getPhoneNumbers(){
 
 /* add phone number to the yth users database */
 var phoneNumberToAdd;
-function registerNumber(phoneNumberToAdd){
+function registerNumber(phoneNumberToAdd, emailToAdd){
   $.ajax({
-         data: "num="+phoneNumberToAdd,
+         data: {phnum:phoneNumberToAdd, email:emailToAdd},
          type:"post",
-         url: 'http://students.engr.scu.edu/~kdedoshk/seniorDesign/insertYthUser.php',
+         url: 'http://salauno.engr.scu.edu/insertYthUser.php',
          success: function(data){
          navigator.notification.alert("Thank you for registering!", function(){window.location.href = "./healthQuestionnaire.html";}, "StreetConnect for Youth", "Ok");
          }

@@ -7,7 +7,9 @@ var categories = ["clothing", "employment", "food", "healthcare", "housing"];
 var usedResource = Array();
 var k = 0;
 var counter = 0;
-
+ 
+var zip = JSON.parse(sessionStorage["zipcode"]);
+console.log(zip);
 $(function  (){
     // bind for the send mail button to make a post request with all the itmes required to be provided
     // it calls[post request] the backend to send mail with the data
@@ -25,7 +27,29 @@ $(function  (){
 function onDeviceReady() {
     $('#busy').show();
     
-    getCurrentLocation();
+    if(zip== "No zipcode")
+      getCurrentLocation();
+    else
+      getZipcodeLocation();
+}
+
+// get location by zipcode
+
+function getZipcodeLocation(){
+
+  var geocoder = new google.maps.Geocoder();
+  var address = zip[0];
+
+  geocoder.geocode( { 'address': address}, function(results, status) {
+
+  if (status == google.maps.GeocoderStatus.OK) {
+      $('#busy').hide();
+      currentLatitude = results[0].geometry.location.lat();;
+      currentLongitude = results[0].geometry.location.lng();
+      getData();
+      }
+  else { onError(status);}
+});
 }
 
 /*gets the data from the categories database*/

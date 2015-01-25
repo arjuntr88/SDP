@@ -53,6 +53,10 @@ body {
     
 }
 
+div#mainText {
+  padding: .5em;
+}
+
 .homePageButton {
     height: 70px;
     /*background-image: url('../img/medQuestionnaireImg.png');*/
