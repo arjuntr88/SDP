@@ -21,7 +21,7 @@ $(function  (){
                         var answersArray = localStorage.getItem("selectedResources");
                         var answerValues = JSON.parse(answersArray);
                         for(var i=0; i<=answerValues.length; i++){
-                            messageBody = messageBody + answerValues[i] + "%0A%0A";
+                            messageBody = messageBody + answerValues[i] + "\n\n";
                         }
                         
                          $.ajax({

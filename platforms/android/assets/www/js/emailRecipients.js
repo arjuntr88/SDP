@@ -13,7 +13,7 @@ $(function  (){
                         
                         for (var i = 0; i < answersArray.length; i++) {
                             var answerArray = answersArray[i].split(':');
-                            messageBody = messageBody + answerArray[0] + "%0A Answer: " + answerArray[1]  + "%0A%0A";
+                            messageBody = messageBody +"<b>"+ answerArray[0] + "</b>\n Answer: " + answerArray[1]  + "\n\n";
                             
                         }
                        
