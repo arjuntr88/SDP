@@ -16,7 +16,6 @@ $(function  (){
   $("#submit").click(function() {
   	var answers = localStorage.getItem("answersArray");	
   	var providerEmail = localStorage.getItem("providerEmail");
-  	console.log(answers);
   	//inserting the answers in database
 	$.ajax({
 //
@@ -29,10 +28,32 @@ $(function  (){
 			async: true,
 			cache: false,
 			success: function(result) {
-			navigator.notification.alert("Thank You. Please return the tablet to your service provide to complete the questionnaire.",function(){window.location.href = "./emailResults.html";}, "Questionnaire Complete", "Ok");
+				var answersArray = JSON.parse(localStorage.getItem("answersArray"));
+                var messageBody="";        
+                for (var i = 0; i < answersArray.length; i++) {
+                    var answerArray = answersArray[i].split(':');
+                    messageBody = messageBody + answerArray[0] + "\n Answer: " + answerArray[1]  + "\n\n";
+                    
+                }
+                if(providerEmail!=null || providerEmail!=''){
+                $.ajax({
+                     data: {mailto: providerEmail, message: messageBody, subject : "Questionnaire Answers"},
+                     type:"POST",
+                     url: 'http://salauno.engr.scu.edu/emailReferrals.php',
+                     error: function(data){
+                        navigator.notification.alert("Unable to send email right now, Continue?", function(){window.location.href = "./homePage.html";}, "StreetConnect for Youth", "Ok");
+                        //alert(Text);
+                     },
+                     success: function(data){
+                        navigator.notification.alert("Thank You. Please return the tablet to your service provide to complete the questionnaire.	", function(){window.location.href = "./homePage.html";}, "StreetConnect for Youth", "Ok");
+                     }
+                     
+                     });
+            }
+            else{
+				navigator.notification.alert("Thank You. Please return the tablet to your service provide to complete the questionnaire.",function(){window.location.href = "./emailResults.html";}, "Questionnaire Complete", "Ok");
+            }
    			
-			console.log("stored answers");
-
 			}
 
 		});

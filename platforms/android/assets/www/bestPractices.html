@@ -24,19 +24,16 @@
             </div>
             <div data-role="content">
                 
-                <h2 dir="ltr" >Resources and Best Practices</h2>
-
-                
-                <h3 dir="ltr" >General</h3>
-
-                <p>Comprehensive base of resources cross-cutting homelessness and other issues</p>
-
-                <p>http://homeless.samhsa.gov/Channel/Browse.aspx</p>
-
-                
-                <h3 dir="ltr" >Sexual Health</h3>
-
-                <p>STD Treatment Guidelines - Centers for Disease Control and Prevention (CDC) </p>
+<ul data-role="listview" class="ui-listview-outer">
+  <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>General</h2>
+    <p>Comprehensive base of resources cross-cutting homelessness and other issues</p>
+    <p>http://homeless.samhsa.gov/Channel/Browse.aspx</p>
+  </li>
+  
+  <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>Sexual Health</h2>
+              <p>STD Treatment Guidelines - Centers for Disease Control and Prevention (CDC) </p>
 
                 <p><a href="http://www.cdc.gov/std/treatment/2010/default.htm" >http://www.cdc.gov/std/treatment/2010/default.htm</a></p>
 
@@ -59,12 +56,10 @@
                 <p>HIV/AIDS Information - National Institutes of Health</p>
 
                 <p><a href="http://aids.nlm.nih.gov/" >http://aids.nlm.nih.gov/</a></p>
-
-                
-                
-                <h3 dir="ltr" >Homelessness</h3>
-
-                <p>Best Practices Working with Homeless Youth</p>
+  </li>
+  <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>Homelessness</h2>
+    <p>Best Practices Working with Homeless Youth</p>
 
                 <p>http://homeless.samhsa.gov/Channel/Best-Practices-for-Providers-17.aspx</p>
 
@@ -75,12 +70,10 @@
 
                 <p>An Emerging Framework for Ending Unaccompanied Youth Homelessness<br />
                 <a href="http://www.endhomelessness.org/library/entry/an-emerging-framework-for-ending-unaccompanied-youth-homelessness" >http://www.endhomelessness.org/library/entry/an-emerging-framework-for-ending-unaccompanied-youth-homelessness</a></p>
-
-                
-                
-                <h3 dir="ltr" >LGBT</h3>
-
-                <p>Best Practices Working with Homeless LGBT Youth - Lambda Legal</p>
+  </li> 
+   <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>LGBT</h2>
+    <p>Best Practices Working with Homeless LGBT Youth - Lambda Legal</p>
 
                 <p><a href="http://www.lambdalegal.org/know-your-rights/homeless-lgbtq-youth" >http://www.lambdalegal.org/know-your-rights/homeless-lgbtq-youth</a></p>
 
@@ -109,11 +102,11 @@
                 <p>Gay and Bisexual Men’s Health - CDC</p>
 
                 <p>http://www.cdc.gov/msmhealth/index.htm</p>
+  </li>  
 
-                
-                <h3 dir="ltr" >Addictions</h3>
-
-                <p>A Comprehensive Approach to Substance Abuse and Homelessness (pdf)</p>
+   <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>Addictions</h2>
+    <p>A Comprehensive Approach to Substance Abuse and Homelessness (pdf)</p>
 
                 <p><a href="http://www.nhchc.org/wp-content/uploads/2012/02/hh-1003.pdf" >http://www.nhchc.org/wp-content/uploads/2012/02/hh-1003.pdf</a></p>
 
@@ -125,11 +118,9 @@
                 
                 <p>Principles of Drug Addiction Treatment: A Research-Based Guide (with resources section)<br />
                 http://www.drugabuse.gov/publications/principles-drug-addiction-treatment-research-based-guide-third-edition/resources</p>
-
-               
-                <h3 dir="ltr" >Domestic Violence</h3>
-
-                <p>Domestic Violence and Homelessness - ACLU</p>
+  </li>   <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>Domestic Violence</h2>
+    <p>Domestic Violence and Homelessness - ACLU</p>
 
                 <p><a href="https://www.aclu.org/sites/default/files/pdfs/dvhomelessness032106.pdf" >https://www.aclu.org/sites/default/files/pdfs/dvhomelessness032106.pdf</a></p>
 
@@ -142,8 +133,14 @@
                 <p>Domestic Violence, Homelessness, and Children’s Education</p>
 
                 http://center.serve.org/nche/downloads/briefs/domestic.pdf
-                
+  </li>
+</ul>                
             </div>
+
+            <!-- Create footer for user to select finish button and return to home page -->
+                <div id="footerBottom" data-role="footer" class="ui-bar">
+                    <a href="./homePage.html" data-role="button" data-icon="arrow-r" class="ui-btn-right" style="float: right; margin-right:10px;">Finish</a>
+                </div>
         </div>
         <script src="js/jquery.js"></script>
         <script src="js/jquery.mobile-1.0rc1.min.js"></script>
