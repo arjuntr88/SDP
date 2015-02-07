@@ -29,6 +29,7 @@ public class CordovaApp extends CordovaActivity
     {
         super.onCreate(savedInstanceState);
         super.init();
+        super.appView.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
     }

@@ -22,6 +22,14 @@ body {
     width:100%;
 }
 
+.ui-footer .ui-btn-right {
+  margin-right: 1em !important;
+}
+
+
+.ui-collapsible-content .ui-li-desc {
+  font-size: 2em;
+}
 .ui-body-c {
     background: #F7F7F7;
     /*background: #dedede;*/
@@ -58,7 +66,7 @@ div#mainText {
 }
 
 .homePageButton {
-    height: 70px;
+    height: 3.3em;
     /*background-image: url('../img/medQuestionnaireImg.png');*/
     /*background-image: url('../img/mqSquare.png') !important;*/
     /*background-size: 100% 100% !important;*/
@@ -68,15 +76,16 @@ div#mainText {
   border-radius: 3px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 25px !important;
+  font-size: 2em !important;
   background: #97c83c !important;
   background-size: 155% !important;
   /*padding: 10px 20px 10px 20px;*/
   text-decoration: none;
+  /*margin-bottom: 1em;*/
 }
 
 .regPageButton {
-    height: 50px;
+    height: 2.5em;
     /*background-image: url('../img/medQuestionnaireImg.png');*/
     /*background-image: url('../img/mqSquare.png') !important;*/
     /*background-size: 100% 100% !important;*/
@@ -86,7 +95,7 @@ div#mainText {
   border-radius: 3px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 20px !important;
+  font-size: 2em !important;
   background: #97c83c !important;
   background-size: 100% !important;
   /*padding: 10px 20px 10px 20px;*/
@@ -94,7 +103,7 @@ div#mainText {
 }
 
 .questButton {
-    height: 70px;
+    height: 2.3em;
     /*background-image: url('../img/medQuestionnaireImg.png');*/
     /*background-image: url('../img/mqSquare.png') !important;*/
     /*background-size: 100% 100% !important;*/
@@ -104,14 +113,14 @@ div#mainText {
   border-radius: 3px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 2em;
   background: #97c83c !important;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 }
 
 .bestPracButton {
-    height: 70px;
+    height: 2.3em;
     /*background-image: url('../img/medQuestionnaireImg.png');*/
     /*background-image: url('../img/mqSquare.png') !important;*/
     /*background-size: 100% 100% !important;*/
@@ -121,7 +130,7 @@ div#mainText {
   border-radius: 3px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 2em;
   background: #97c83c !important;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -130,7 +139,7 @@ div#mainText {
 .toolsButton {
     /*width: 100%;
     height: 15%;*/
-    height: 70px;
+    height: 2.3em;
     /*background: #98C93C;
     font-size: 27;
     text-align: left;*/
@@ -142,7 +151,7 @@ div#mainText {
   border-radius: 3px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 2em;
   background: #97c83c !important;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
@@ -156,14 +165,19 @@ div#mainText {
 
 #registerContent {
     position: absolute;
-    margin-top: 32%;
-    margin-left: 25%;
-    padding: 1em;
+    margin-top: 30%;
+    margin-left: 20%;
+    padding: .5em;
+}
+
+#infoContent {
+  margin-top: 73%;
+  margin-left: 17%;
 }
 
 .phoneInput {
-    height: 65px;
-    width: 100% !important;
+    height: 2em;
+    width: 77% !important;
     margin-top: 10px;
     
 }
@@ -325,7 +339,7 @@ div#mainText {
     bottom:0;
     position:absolute !important;
     top: auto !important;
-    width:96%;
+    width:100%;
     left: 0;
 }
 

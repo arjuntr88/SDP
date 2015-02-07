@@ -20,12 +20,19 @@ $(function  (){
                         }
                         var answersArray = localStorage.getItem("selectedResources");
                         var answerValues = JSON.parse(answersArray);
-                        for(var i=0; i<=answerValues.length; i++){
-                            messageBody = messageBody + answerValues[i] + "\n\n";
+                        messageBody += "<h2>Selected Resources</h2>";
+                        for(var i=0; i<answerValues.length; i++){
+                            
+                            var resource = answerValues[i].split(':');
+                            messageBody += '<h3>'+(i+1)+'. '+resource[0]+'</h3><p>';
+                            for(var j = 1; j<resource.length; j++){
+                                messageBody += resource[j] + "<br/>";
+                            }
+                            messageBody  += "</p>";
                         }
                         
                          $.ajax({
-                             data: {mailto: emailAddress, message: messageBody, subject : "Resources selected"},
+                             data: {mailto: emailAddress, message: messageBody, subject : "Your YTH StreetConnect Resources"},
                              type:"POST",
                              url: 'http://salauno.engr.scu.edu/emailReferrals.php',
                              error: function(data){
@@ -33,7 +40,7 @@ $(function  (){
                                 //alert(Text);
                              },
                              success: function(data){
-                                navigator.notification.alert("Email will be sent to the entered address!", function(){window.location.href = "./homePage.html";}, "StreetConnect for Youth", "Ok");
+                                navigator.notification.alert("Selected resources will be sent to the email address", function(){window.location.href = "./homePage.html";}, "StreetConnect for Youth", "Ok");
                              }
                              
                              });

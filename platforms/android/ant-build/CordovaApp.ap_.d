@@ -35,6 +35,7 @@
 /media/data/scu/yth/SDP3/platforms/android/assets/www/emailResults.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/emailSelectedResources.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/examples \
+/media/data/scu/yth/SDP3/platforms/android/assets/www/gwd_workspace.json \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/healthQuestionnaire.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/homePage.html \
 /media/data/scu/yth/SDP3/platforms/android/assets/www/icon.png \
