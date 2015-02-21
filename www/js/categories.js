@@ -121,7 +121,7 @@ function setResource(dataPassed) {
                                   '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.png" />' +
                                   '<h2>' + resource[1] + '</h2>' +
                                   '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
-                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+","+resource[2]+","+resource[3]+'" style="visibility: hidden" />'+'</li>' +
+                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility: hidden" />'+'</li>' +
                                   '</ul></div>').bind("click", '#'+resource[1], function(event, ui) {
                                             if($(this).find("input[type='checkbox']").prop('checked')){
                                               $(this).find("input[type='checkbox']").prop('checked', false).checkboxradio('refresh');

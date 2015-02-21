@@ -28,7 +28,7 @@ $(function  (){
 function loadData(data){
     var i=1, total = data.total;
     var listString='<ul data-role="listview" data-inset="true">'+
-      '<li data-role="list-divider" id="greenBar">Total number of answers: '+total+'</li></ul>';
+      '<li data-role="list-divider" id="greenBar">Total number of responses: '+total+'</li></ul>';
     $("#main-content").append(listString).trigger("create");
     $.each(data, function(k, v) {
     //display the key and value pair

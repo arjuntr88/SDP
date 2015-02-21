@@ -29,10 +29,10 @@ $(function  (){
 			cache: false,
 			success: function(result) {
 				var answersArray = JSON.parse(localStorage.getItem("answersArray"));
-                var messageBody="";        
+                var messageBody="<h2>Questionnaire Results</h2>";        
                 for (var i = 0; i < answersArray.length; i++) {
                     var answerArray = answersArray[i].split(':');
-                    messageBody = messageBody + answerArray[0] + "\n Answer: " + answerArray[1]  + "\n\n";
+                    messageBody = messageBody +'<b>'+ answerArray[0] + "</b><br/> Answer: " + answerArray[1]  + "<br/>";
                     
                 }
                 if(providerEmail!=null || providerEmail!=''){
@@ -45,13 +45,13 @@ $(function  (){
                         //alert(Text);
                      },
                      success: function(data){
-                        navigator.notification.alert("Thank You. Please return the tablet to your service provide to complete the questionnaire.	", function(){window.location.href = "./homePage.html";}, "StreetConnect for Youth", "Ok");
+                        navigator.notification.alert("Thank You. Please return the tablet to your Service Provider to complete the Questionnaire.	", function(){window.location.href = "./homePage.html";}, "StreetConnect for Youth", "Ok");
                      }
                      
                      });
             }
             else{
-				navigator.notification.alert("Thank You. Please return the tablet to your service provide to complete the questionnaire.",function(){window.location.href = "./emailResults.html";}, "Questionnaire Complete", "Ok");
+				navigator.notification.alert("Thank You. Please return the tablet to your Service Provider to complete the Questionnaire.",function(){window.location.href = "./emailResults.html";}, "Questionnaire Complete", "Ok");
             }
    			
 			}

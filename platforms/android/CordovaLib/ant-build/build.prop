@@ -1,5 +1,9 @@
 #Last build type
+<<<<<<< HEAD
 #Thu, 29 Jan 2015 09:53:14 -0800
+=======
+#Wed, 04 Feb 2015 10:54:16 -0800
+>>>>>>> FETCH_HEAD
 
 build.last.target=debug
 
