@@ -1,2 +1,2 @@
-/media/data/scu/yth/SDP3/platforms/android/ant-build/AndroidManifest.xml : \
-/media/data/scu/yth/SDP3/platforms/android/AndroidManifest.xml \
+/Users/apurva/Documents/temp/SDP/platforms/android/ant-build/AndroidManifest.xml : \
+/Users/apurva/Documents/temp/SDP/platforms/android/AndroidManifest.xml \
