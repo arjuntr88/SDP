@@ -19,6 +19,7 @@
 
 package com.yth.provider;
 
+import android.webkit.WebView;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
