@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>category-healthcare-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Featured-Resources" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSArtboardGroup" transform="translate(-181.000000, -607.000000)" id="HEALTHCARE-CATEGORY" fill="#F6A623">
+            <g sketch:type="MSLayerGroup" transform="translate(181.000000, 605.000000)">
+                <path d="M14.4960938,26 C14.7773438,26 15,25.7773438 15,25.4960938 L15,17 L23.4960938,17 C23.7773438,17 24,16.7773438 24,16.4960938 L24,11.5039062 C24,11.2226562 23.7773438,11 23.4960938,11 L15,11 L15,2.50390625 C15,2.22265625 14.7773438,2 14.4960938,2 L9.50390625,2 C9.22265625,2 9,2.22265625 9,2.50390625 L9,11 L0.50390625,11 C0.22265625,11 0,11.2226562 0,11.5039062 L0,16.4960938 C0,16.7773438 0.22265625,17 0.50390625,17 L9,17 L9,25.4960938 C9,25.7773438 9.22265625,26 9.50390625,26 L14.4960938,26 Z" id="category-healthcare-icon" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

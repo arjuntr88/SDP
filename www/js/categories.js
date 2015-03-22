@@ -116,9 +116,11 @@ function setResource(dataPassed) {
     $('#homeList').append(function () {
               return $('<div>' +
                                   '<ul data-role="listview" data-inset="true">' +
-                                  '<li id="greenBar1">' + catName + '</li>' +
+                                  '<li id="greenBar1">' + 
+                                  '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' +
+                                  catName + '</li>' +
                                   '<li class="subRow" id="'+resource[1]+'">' +
-                                  '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.png" />' +
+                                  
                                   '<h2>' + resource[1] + '</h2>' +
                                   '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
                                   '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility: hidden" />'+'</li>' +

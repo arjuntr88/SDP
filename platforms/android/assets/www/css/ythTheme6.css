@@ -104,9 +104,10 @@ label.ui-btn {
 }
 
 .ui-btn-left {
-	background: url(../img/back-btn.svg) 50% 50% no-repeat !important;
-	width: 60px !important;
-	height: 60px !important;
+	background: url(../img/back-btn.svg) no-repeat !important;
+	width: 48px !important;
+	height: 48px !important;
+	background-size: 48px 48px !important;
 }
 
 .ui-btn-left .ui-btn-inner {
@@ -811,3 +812,9 @@ button[disabled],
     background-color: #8cc63f;
 }
 
+
+/* CSS for resources page */
+#featuredResourcesLogo h1{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
