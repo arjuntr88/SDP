@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26px"
+   height="26px"
+   viewBox="0 0 26 26"
+   version="1.1"
+   id="svg3042"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="back-button.svg">
+  <metadata
+     id="metadata3059">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="949"
+     inkscape:window-height="635"
+     id="namedview3057"
+     showgrid="false"
+     inkscape:zoom="9.0769231"
+     inkscape:cx="13"
+     inkscape:cy="13"
+     inkscape:window-x="10"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3042" />
+  <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title3044">back-button</title>
+  <desc
+     id="desc3046">Created with Sketch.</desc>
+  <defs
+     id="defs3048" />
+  <g
+     id="Featured-Resources"
+     sketch:type="MSPage"
+     transform="matrix(-1,0,0,-1,26,26)"
+     style="fill:none;stroke:none">
+    <g
+       sketch:type="MSArtboardGroup"
+       transform="translate(-181,-113)"
+       id="MASTHEAD">
+      <g
+         sketch:type="MSLayerGroup"
+         transform="translate(161,113)"
+         id="g3052">
+        <g
+           id="back-button"
+           transform="translate(20,0)"
+           sketch:type="MSShapeGroup">
+          <circle
+             id="back-button-circle"
+             cx="13"
+             cy="13"
+             r="13"
+             d="M 26,13 C 26,20.179702 20.179702,26 13,26 5.8202983,26 0,20.179702 0,13 0,5.8202983 5.8202983,0 13,0 20.179702,0 26,5.8202983 26,13 z"
+             sodipodi:cx="13"
+             sodipodi:cy="13"
+             sodipodi:rx="13"
+             sodipodi:ry="13"
+             style="fill:#33b5e5" />
+          <path
+             d="m 14,21.005859 c 0.09375,0 0.171875,-0.03906 0.242188,-0.09375 l 2.335937,-2.335937 c 0.125,-0.125 0.125,-0.351563 0,-0.476563 l -5.109375,-5.09375 5.109375,-5.0937496 c 0.125,-0.125 0.125,-0.3515625 0,-0.4765625 L 14.242188,5.0996094 c -0.125,-0.1328125 -0.351563,-0.1328125 -0.476563,0 L 6.09375,12.763672 c -0.125,0.132812 -0.125,0.351562 0,0.484375 l 7.671875,7.664062 c 0.07031,0.05469 0.140625,0.09375 0.234375,0.09375 l 0,0 z"
+             id="previous-icon"
+             inkscape:connector-curvature="0"
+             style="fill:#ffffff;fill-opacity:0.7" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

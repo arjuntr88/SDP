@@ -43,8 +43,10 @@ body {
     padding-bottom: 10%;
 }
 .mainBar {
-    width: 50%;
-    padding-left: 15%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
     
 }
 
@@ -68,7 +70,7 @@ div#mainText {
 }
 
 .homePageButton {
-    height: 3.3em;
+    /*height: 3.3em;*/
     /*background-image: url('../img/medQuestionnaireImg.png');*/
     /*background-image: url('../img/mqSquare.png') !important;*/
     /*background-size: 100% 100% !important;*/
@@ -78,6 +80,7 @@ div#mainText {
   border-radius: 3px;
   font-family: Arial;
   color: #ffffff;
+  text-align: left; 
   font-size: 2em !important;
   background: #33CCFF!important;
   background-size: 155% !important;
@@ -86,6 +89,9 @@ div#mainText {
   /*margin-bottom: 1em;*/
 }
 
+#homePage .ui-content {
+  padding: 15%;
+}
 .regPageButton {
     height: 2.5em;
     /*background-image: url('../img/medQuestionnaireImg.png');*/

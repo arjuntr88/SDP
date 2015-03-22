@@ -1,4 +1,4 @@
-/Users/apurva/Documents/temp/SDP/platforms/android/ant-build/CordovaApp-debug-unaligned.apk : \
-/Users/apurva/Documents/temp/SDP/platforms/android/ant-build/CordovaApp.ap_ \
-/Users/apurva/Documents/temp/SDP/platforms/android/ant-build/classes.dex \
-/Users/apurva/Documents/temp/SDP/platforms/android/CordovaLib/ant-build/classes.jar \
+/media/data/scu/yth/SDP/platforms/android/ant-build/CordovaApp-debug-unaligned.apk : \
+/media/data/scu/yth/SDP/platforms/android/ant-build/CordovaApp.ap_ \
+/media/data/scu/yth/SDP/platforms/android/ant-build/classes.dex \
+/media/data/scu/yth/SDP/platforms/android/CordovaLib/ant-build/classes.jar \
