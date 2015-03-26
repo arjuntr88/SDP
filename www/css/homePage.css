@@ -50,6 +50,10 @@ body {
     
 }
 
+.continueBtn {
+  width: 35% !important;
+}
+
 #toolsResBar {
     
     
@@ -91,6 +95,14 @@ div#mainText {
 
 #homePage .ui-content {
   padding: 15%;
+}
+
+#bestPracPage .ui-content {
+  padding-bottom: 10%;
+}
+
+#confidentialityPage .ui-content {
+  padding: 5%;
 }
 .regPageButton {
     height: 2.5em;
@@ -184,8 +196,9 @@ div#mainText {
 }
 
 .phoneInput {
-    height: 2em;
-    width: 77% !important;
+    width : 98% !important;
+    margin-left: 1.5%;
+    height: 57px;
     margin-top: 10px;
     
 }
@@ -292,12 +305,14 @@ div#mainText {
 #backToQuestionnaire {
     width: 45%;
     /*height: 50px;*/
+    background: #33CCFF!important;
     padding-right: 5%;
     float: left;
 }
 
 #submit {
     width: 45%;
+    background: #33CCFF!important;
     float: right;
 }
 
@@ -363,7 +378,7 @@ div#mainText {
 
 #emailAddr1 {
     width: 98%;
-    margin-left: 1%;
+    margin-left: 1.5%;
     height: 57px;
 }
 
@@ -373,8 +388,8 @@ div#mainText {
 }
 
 #emailButtonDiv {
-    width: 98% !important;
-    margin-left: 1% !important;
+    /*width: 98% !important;
+    margin-left: 1% !important;*/
     padding-top: 15px;
     padding-bottom: 20px;
 }
@@ -407,10 +422,11 @@ div#mainText {
 }
 
 #clothingImg {
-	padding-top: 20px;
+	/*padding-top: 20px;
 	padding-left: 20px;
-	opacity: 0.7;
-	width: 6%;
+	opacity: 0.7;*/
+	width: 25%;
+  top: -12px;
 }
 
 #homeList h2 {
@@ -450,5 +466,10 @@ div#mainText {
 }
 
 li .resCheckBox {
-  float: right !important;
+  left: initial;
+  top: initial;
+  right:20px !important;
+  bottom: 40px !important;
+  width: initial;
+  height: initial;
 }

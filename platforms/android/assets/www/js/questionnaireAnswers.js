@@ -74,7 +74,7 @@ function loadData(data){
       var formString="";
       formString = '<form id="question-'+i+'">'+
           '<fieldset data-role="controlgroup" data-type="vertical">'+
-          '<li class="ui-li ui-li-divider ui-btn ui-bar-a ui-corner-top" id="greenBar" data-role="list-divider">'+(i+1)+'. '+data[i][0]+'</li>';
+          '<li class="ui-li ui-li-divider ui-btn ui-bar-a ui-corner-top"  data-role="list-divider">'+(i+1)+'. '+data[i][0]+'</li>';
        
       for (var j = 0; j <= answers.length - 1; j++) {
        // console.log(alphabet.charAt(j));

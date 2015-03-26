@@ -128,6 +128,7 @@ label.ui-btn {
   margin-top: -25px !important;
 }
 
+
 .ui-btn-finish .ui-icon {
 	right: 0px !important;
 	top: 22px !important;
@@ -145,6 +146,18 @@ label.ui-btn {
 
 }
 
+.ui-icon-mail-btn {
+  background: url(../img/right-btn.svg) 50% 50% no-repeat;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+
+}
+
 /* Corner rounding
 -----------------------------------------------------------------------------------------------------------*/
 /* Class ui-btn-corner-all deprecated in 1.4 */
@@ -153,6 +166,11 @@ label.ui-btn {
 	border-radius: .6em /*{global-radii-blocks}*/;
 }
 /* Buttons */
+
+.ui-header .ui-btn-corner-all {
+	-webkit-border-radius: 24px /*{global-radii-buttons}*/;
+	border-radius: 24px; /*{global-radii-buttons}*/;
+}
 .ui-btn-corner-all,
 .ui-btn.ui-corner-all,
 /* Slider track */
@@ -817,4 +835,81 @@ button[disabled],
 #featuredResourcesLogo h1{
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+}
+
+.ui-listview .ui-li {
+	min-height: initial;
+	padding-left: initial;
+	padding-top: 5px;
+	border: none;
+}
+
+#emailDiv .ui-listview .ui-li {
+  
+  padding-top: 2em !important;
+  
+}
+.ui-listview .ui-li .catName {
+	padding-left: 65px;
+	font-size: 23px;
+  	color: #DCB064;
+  	font-family: Roboto-Light;
+}
+#homeList hr {
+	margin: 0 !important;
+}
+
+li img {
+	padding-top: 4px !important;
+	border-radius: 0 !important;
+}
+.ui-listview {
+	box-shadow: none;
+	margin: 0 !important;
+}
+
+.res-content {
+	padding-bottom: 70px !important;
+}
+
+/* Email resources page */
+.sendBtn {
+  width: 35% !important;
+}
+
+.sendBtn .ui-icon {
+	top: initial;
+}
+
+
+/* Register page */
+.continueButton {
+	width: 50% !important;
+}
+.continueButton .ui-icon {
+	top : initial;
+	margin-top: initial;
+}
+
+
+/* home page */
+
+.homePageButton {
+    /*height: 3.3em;*/
+    /*background-image: url('../img/medQuestionnaireImg.png');*/
+    /*background-image: url('../img/mqSquare.png') !important;*/
+    /*background-size: 100% 100% !important;*/
+
+    -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family: Arial;
+  color: #ffffff;
+  text-align: left; 
+  font-size: 2em !important;
+  background: #33CCFF!important;
+  background-size: 155% !important;
+  /*padding: 10px 20px 10px 20px;*/
+  text-decoration: none;
+  /*margin-bottom: 1em;*/
 }

@@ -16,28 +16,42 @@
     <body>
         <div id="homePage" data-role="page">
             <div data-role="header" data-position="fixed">
-                <h1>Register for StreetConnect</h1>
-                <a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1)" data-theme="a">Back</a>
+               <img src="./img/SCLogo.png" class="ui-logo" />
+
+                <a class="ui-btn-left"  href="javascript:history.back(1) " data-theme="a" ></a>
             </div>
             <div data-role="content">
                 <!-- StreetConnect logo -->
-                <div id="headerRegAcct">
-                    <img src="./img/StreetConnectForYouthLogo.png" width = "70%" />
-                </div>
+               
                 <!-- grey background bubble image 
                 <div id="greyBackgroundBubble">
                     <img src="./img/greyBubbleImage7.png" height = "385px" width = "85%" />
                 </div>-->
                  <!-- input field for phone number -->
-                <div id="registerContent">
+               <!--  <div id="registerContent">
                    <input type="text" name="phoneNumberEntry" id="phoneNumberEntry" placeholder= "Phone Number (10 Digits) optional" class = "phoneInput" />
                    <input type="text" name="emailAddressEntry" id="emailAddressEntry" placeholder="Email Address optional" class="phoneInput"/>
-                   <!-- button to submit -->
+                   
                     <div id="regAcctButton">
                         <a class="regPageButton" id="registerAcctSC" data-role="button" data-icon="arrow-r" data-iconpos="right">Continue</a>
                     </div>
                     
-                </div>
+                </div> -->
+
+                <form id="emailDiv">
+                    <ul data-role="listview" data-inset="true">
+                    <h1 id="emailH1">Register for StreetConnect</h1>
+                        <li data-role="fieldcontain" class="listViewId">
+                            
+                            <p id="emailP"> The selected resources will be emailed to the provided address</p>
+                            <input type="text" name="phoneNumberEntry" id="phoneNumberEntry" placeholder= "Phone Number (10 Digits) optional" class = "phoneInput" />
+                            <input type="text" name="emailAddressEntry" id="emailAddressEntry" placeholder="Email Address optional" class="phoneInput"/>
+                            <div id="emailButtonDiv" class="mainBar continueButton">
+                                <a class="homePageButton"  id="registerAcctSC" data-role="button" data-icon="mail-btn" data-iconpos="right"> Continue </a>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
                 
             </div>
             <div id="infoContent">

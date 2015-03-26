@@ -7,8 +7,8 @@ $(function  (){
 	for (var i = 0; i < answersArray.length; i++) {
 		answerArray = answersArray[i].split(':');
 		var listString = '<ul data-role="listview" data-inset="true">'+
-		'<li data-role="list-divider" id="greenBar">'+answerArray[0]+'</li>'+
-		'<li>'+answerArray[1]+'</li></ul>';
+		'<li data-role="list-divider" >'+answerArray[0]+'</li>'+
+		'<li><h2>'+answerArray[1]+'</h2></li></ul>';
 		$("#questionAnswers").append(listString);
 	};
 

@@ -23,19 +23,22 @@
     <body id = "main_body" class = "doc">
         <div id="homePage" data-role="page">
             <div data-role="header" data-position="fixed">
-                <h1>Email Results</h1>
-                <a class="ui-btn-left" data-icon="left-btn1" href="javascript:history.back(1) " data-theme="a"/>
+                <img src="./img/SCLogo.png" class="ui-logo" />
+
+                <a class="ui-btn-left"  href="javascript:history.back(1) " data-theme="a" ></a>
             </div>
             <div data-role="content">
+
                 <!-- Create email content box and input fields-->
                 <form id="emailDiv">
                     <ul data-role="listview" data-inset="true">
+                    <h1 id="emailH1">  EMAIL SELECTED RESOURCES  </h1>
                         <li data-role="fieldcontain" class="listViewId">
-                            <h1 id="emailH1">  Email selected resources  </h1>
+                            
                             <p id="emailP"> The selected resourceswill be emailed to the provided address</p>
                             <input type="text" name="emailAddr" id="emailAddr1" class="emailTexField" placeholder="Email Address" />
-                            <div id="emailButtonDiv">
-                                <a class="emailButton2" id="emailButton" data-role="button"></a>
+                            <div id="emailButtonDiv" class="mainBar sendBtn">
+                                <a class="homePageButton"  id="emailButton" data-role="button" data-icon="mail-btn" data-iconpos="right"> Send </a>
                             </div>
                         </li>
                     </ul>

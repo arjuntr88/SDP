@@ -116,24 +116,18 @@ function setResource(dataPassed) {
     $('#homeList').append(function () {
               return $('<div>' +
                                   '<ul data-role="listview" data-inset="true">' +
-                                  '<li id="greenBar1">' + 
+                                  '<li >' + 
+                                  
+                                  '<input class="resCheckBox" type="checkbox" name="resCheck" id="checkbox-'+k+'" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility:hidden " />'+
+                                  '<label for="checkbox-'+k+'">'+
                                   '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' +
-                                  catName + '</li>' +
-                                  '<li class="subRow" id="'+resource[1]+'">' +
+                                  '<span class="catName">' +catName + '</span>' +
                                   
                                   '<h2>' + resource[1] + '</h2>' +
                                   '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
-                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility: hidden" />'+'</li>' +
-                                  '</ul></div>').bind("click", '#'+resource[1], function(event, ui) {
-                                            if($(this).find("input[type='checkbox']").prop('checked')){
-                                              $(this).find("input[type='checkbox']").prop('checked', false).checkboxradio('refresh');
-                                              $(this).find(".subRow").css("background-color","white");
-                                            }
-                                            else{
-                                              $(this).find("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
-                                              $(this).find(".subRow").css("background-color","#97c83c");
-                                            }
-                                  });
+                                  '</label>'+
+                                  '</li>' +
+                                  '</ul></div><hr/>')
                                 }).trigger("create");
     
     //update the counter to track what category it is on
@@ -210,22 +204,18 @@ function rigResources(dataPassed2) {
             $('#homeList').append(function () {
               return $('<div>' +
                                   '<ul data-role="listview" data-inset="true">' +
-                                  '<li id="greenBar1">' + catName + '</li>' +
-                                  '<li class="subRow" id="'+resource[1]+'">' +
-                                  '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.png" />' +
+                                  '<li >' + 
+                                  
+                                  '<input class="resCheckBox" type="checkbox" name="resCheck" id="checkbox-'+counter+'" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility:hidden " />'+
+                                  '<label for="checkbox-'+counter+'">'+
+                                  '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' +
+                                  '<span class="catName">' +catName + '</span>' +
+                                  
                                   '<h2>' + resource[1] + '</h2>' +
                                   '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
-                                  '<input class="resCheckBox" type="checkbox" name="resCheck" value="'+resource[1]+","+resource[2]+","+resource[3]+'" style="visibility: hidden" />'+'</li>' +
-                                  '</ul></div>').bind("click", '#'+resource[1], function(event, ui) {
-                                            if($(this).find("input[type='checkbox']").prop('checked')){
-                                              $(this).find("input[type='checkbox']").prop('checked', false).checkboxradio('refresh');
-                                              $(this).find(".subRow").css("background-color","white");
-                                            }
-                                            else{
-                                              $(this).find("input[type='checkbox']").prop('checked', true).checkboxradio('refresh');
-                                              $(this).find(".subRow").css("background-color","#97c83c");
-                                            }
-                                  });
+                                  '</label>'+
+                                  '</li>' +
+                                  '</ul></div>')
                                 }).trigger("create");
         
         }
