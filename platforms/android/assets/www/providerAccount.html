@@ -7,7 +7,7 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+        <meta name="viewport" content="height=device-height, width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
         <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
         <link rel="stylesheet" href="css/homePage.css" />
         <link rel="stylesheet" href="css/ythTheme6.css" />
@@ -20,10 +20,11 @@
     </style>
 
     <body id = "main_body" class = "doc">
-        <div id="homePage" data-role="page">
+        <div  data-role="page">
             <div data-role="header" data-position="fixed">
-                <h1>Email Results</h1>
-                <a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+                <img src="./img/SCLogo.png" class="ui-logo" />
+
+            <a class="ui-btn-left"  href="javascript:history.back(1) " data-theme="a" ></a>
             </div>
             <div data-role="content">
                 <!-- Create email content box and input fields-->
@@ -31,17 +32,18 @@
                     <ul data-role="listview" data-inset="true">
                         <li data-role="fieldcontain" class="listViewId">
                             <h1 id="emailH1"> Enter provider email </h1>
-                            <p id="emailP"> Please verify your email address</p>
+                            <p id="emailP"> Please update your email address</p>
                             <input type="text" name="emailAddr" id="emailAddr1" class="emailTexField" placeholder="Email Address" />
                             <div id="emailButtonDiv">
-                                <a class="homePageButton" id="emailButton2" data-role="button" data-role="button" data-icon="arrow-r" data-iconpos="right">Verify</a>
+                                <a class="homePageButton" id="emailButton2" data-role="button" data-role="button" data-icon="right-btn" data-iconpos="right">Update Email</a>
+                                <a class="homePageButton" id="emailButton3" data-role="button" data-role="button" data-icon="right-btn" data-iconpos="right">Update Profile</a>
                             </div>
                         </li>
                     </ul>
                 </form>
-                <!-- Create footer for user to select finish button and return to home page -->s
+                <!-- Create footer for user to select finish button and return to home page -->
                 <div id="footerBottom" data-role="footer" class="ui-bar">
-                    <a href="./homePage.html" data-role="button" data-icon="arrow-r" class="ui-btn-right" style="float: right; margin-right:10px;">Finish</a>
+                    <a href="./homePage.html" data-role="button" data-icon="right-btn" data-iconpos="right" class="ui-btn-right ui-btn-finish" style="float: right; margin-right:10px;">Finish</a>
                 </div>
             </div>
         </div>

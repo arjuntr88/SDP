@@ -61,7 +61,7 @@ function getData() {
         $.ajax({
                type:"POST",
                data: {category:currentCategory},
-               url: 'http://students.engr.scu.edu/~kdedoshk/seniorDesign/categories.php',
+               url: 'http://salauno.engr.scu.edu/categories.php',
                dataType: 'json',
                async: false,
                success: function(data)
@@ -114,7 +114,7 @@ function setResource(dataPassed) {
     
     var catName = categories[k].substring(0, 1).toUpperCase() + categories[k].substring(1);
     $('#homeList').append(function () {
-              return $('<div>' +
+              var res = '<div>' +
                                   '<ul data-role="listview" data-inset="true">' +
                                   '<li >' + 
                                   
@@ -124,10 +124,19 @@ function setResource(dataPassed) {
                                   '<span class="catName">' +catName + '</span>' +
                                   
                                   '<h2>' + resource[1] + '</h2>' +
-                                  '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
-                                  '</label>'+
+                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
+                                  '<p>Timings: ' + resource[10] + '</p>';
+
+                                  if(resource[11]=='YES') {
+                                    res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
+                                  }
+                                  else{
+                                    //res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
+                                  }
+                              res = res + '</label>'+
                                   '</li>' +
-                                  '</ul></div><hr/>')
+                                  '</ul></div><hr/>'
+              return $(res)
                                 }).trigger("create");
     
     //update the counter to track what category it is on
@@ -170,7 +179,7 @@ function onError(error) {
             $.ajax({
                    type:"POST",
                    data: {category:currentCategory},
-                   url: 'http://students.engr.scu.edu/~kdedoshk/seniorDesign/categories.php',
+                   url: 'http://salauno.engr.scu.edu/categories.php',
                    dataType: 'json',
                    async: false,
                    success: function(data)
@@ -202,7 +211,7 @@ function rigResources(dataPassed2) {
         
         if(resource[1] == resourcesToDisplay[counter]){
             $('#homeList').append(function () {
-              return $('<div>' +
+              var res = '<div>' +
                                   '<ul data-role="listview" data-inset="true">' +
                                   '<li >' + 
                                   
@@ -212,10 +221,19 @@ function rigResources(dataPassed2) {
                                   '<span class="catName">' +catName + '</span>' +
                                   
                                   '<h2>' + resource[1] + '</h2>' +
-                                  '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
-                                  '</label>'+
+                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
+                                  '<p>Timings: ' + resource[10] + '</p>';
+
+                                  if(resource[11]=='YES') {
+                                    res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
+                                  }
+                                  else{
+                                    //res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
+                                  }
+                              res = res + '</label>'+
                                   '</li>' +
-                                  '</ul></div>')
+                                  '</ul></div><hr/>'
+              return $(res)
                                 }).trigger("create");
         
         }

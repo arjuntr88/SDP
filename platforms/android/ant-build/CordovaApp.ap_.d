@@ -506,6 +506,7 @@
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/Healthcare.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/Healthcare.svg \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/healthProvYTHLogo.png \
+/media/data/scu/yth/SDP/platforms/android/assets/www/img/home-alternate-icon.svg \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/Housing.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/Housing.svg \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/logo.png \
@@ -519,7 +520,7 @@
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/SCforProvidersLogo.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/SCLogo.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/sendButton.png \
-/media/data/scu/yth/SDP/platforms/android/assets/www/img/sendButton2.png \
+/media/data/scu/yth/SDP/platforms/android/assets/www/img/sendNewArrow.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/sendSquare.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/sexualHealthQuest.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/StreetConnectForYouthLogo.png \
@@ -539,7 +540,7 @@
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/yth_tag_rgb.jpg \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/featuredResImg.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/greyTop1.png \
-/media/data/scu/yth/SDP/platforms/android/assets/www/img/sendNewArrow.png \
+/media/data/scu/yth/SDP/platforms/android/assets/www/img/sendButton2.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/js/aggregation.js \
 /media/data/scu/yth/SDP/platforms/android/assets/www/js/categories.js \
 /media/data/scu/yth/SDP/platforms/android/assets/www/js/confidentiality.js \

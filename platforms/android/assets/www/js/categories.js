@@ -61,7 +61,7 @@ function getData() {
         $.ajax({
                type:"POST",
                data: {category:currentCategory},
-               url: 'http://students.engr.scu.edu/~kdedoshk/seniorDesign/categories.php',
+               url: 'http://salauno.engr.scu.edu/categories.php',
                dataType: 'json',
                async: false,
                success: function(data)
@@ -124,7 +124,8 @@ function setResource(dataPassed) {
                                   '<span class="catName">' +catName + '</span>' +
                                   
                                   '<h2>' + resource[1] + '</h2>' +
-                                  '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
+                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
+                                  '<p>Timings: ' + resource[10] + '</p>' +
                                   '</label>'+
                                   '</li>' +
                                   '</ul></div><hr/>')
@@ -170,7 +171,7 @@ function onError(error) {
             $.ajax({
                    type:"POST",
                    data: {category:currentCategory},
-                   url: 'http://students.engr.scu.edu/~kdedoshk/seniorDesign/categories.php',
+                   url: 'http://salauno.engr.scu.edu/categories.php',
                    dataType: 'json',
                    async: false,
                    success: function(data)
@@ -212,7 +213,8 @@ function rigResources(dataPassed2) {
                                   '<span class="catName">' +catName + '</span>' +
                                   
                                   '<h2>' + resource[1] + '</h2>' +
-                                  '<p>' + resource[2] + ', ' + resource[3] + ', ' + resource[6] + '</p>'+
+                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
+                                  '<p>Timings: ' + resource[10] + '</p>' +
                                   '</label>'+
                                   '</li>' +
                                   '</ul></div>')

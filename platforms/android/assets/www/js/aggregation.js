@@ -27,18 +27,23 @@ $(function  (){
 
 function loadData(data){
     var i=1, total = data.total;
-    var listString='<ul data-role="listview" data-inset="true">'+
-      '<li data-role="list-divider" id="greenBar">Total number of responses: '+total+'</li></ul>';
+    var listString='<ul data-role="listview" data-inset="true" class="aggregation-listview">'+
+      '<li data-role="list-divider" >Total number of responses: '+total+'</li></ul>';
     $("#main-content").append(listString).trigger("create");
     $.each(data, function(k, v) {
     //display the key and value pair
 
       if(k !== "total"){
-         listString = '<ul data-role="listview" data-inset="true">'+
-        '<li data-role="list-divider" id="greenBar">'+ i++ +'. '+k+'</li>';
+         listString = '<ul data-role="listview" data-inset="true" class="aggregation-listview">'+
+        '<li>'+ i++ +'. '+k+'</li>';
         for (var j = 0; j <= v.length - 1; j++) {
          var percentage = (v[j][1]*100/total);
-         listString+='<li>'+ v[j][0] +' : '+percentage.toFixed(0)+'%</li>';
+         //listString+='<li>'+ v[j][0] +' : '+percentage.toFixed(0)+'%</li>';
+         listString+='<li>'+percentage.toFixed(0)+'% '+v[j][0]+
+         '<br/><svg width="100%" height="20">'+
+          '<rect width="'+percentage.toFixed(0)+'%" height="18" style="fill:rgb(51, 181, 229);stroke-width:0;stroke:rgb(0,0,0)" />'+
+          '</svg>' +
+         '</li>'
         }
 
         listString+='</ul>';

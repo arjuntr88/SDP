@@ -29,9 +29,10 @@ body {
 
 .ui-collapsible-content .ui-li-desc {
   font-size: 2em;
+  word-wrap: break-word;
 }
 .ui-body-c {
-    background: #F7F7F7;
+    /*background: #F7F7F7;*/
     /*background-image: url('../img/dummy.jpg');*/
     /*background: #dedede;*/
     /*background: #4f4f4f;*/
@@ -43,7 +44,7 @@ body {
     padding-bottom: 10%;
 }
 .mainBar {
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1%;
@@ -95,6 +96,16 @@ div#mainText {
 
 #homePage .ui-content {
   padding: 15%;
+  padding-top: 5%;
+}
+
+#registerPage .ui-content {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#bestPracPage .ui-content {
+  padding-bottom: 10%;
 }
 
 #confidentialityPage .ui-content {
@@ -387,8 +398,12 @@ div#mainText {
     /*width: 98% !important;
     margin-left: 1% !important;*/
     padding-top: 15px;
+    width:50%;
     padding-bottom: 20px;
-}
+    margin-left: auto;
+   margin-right: auto;
+  
+}   
 
 .emailButton2 {
     height: 65px;
@@ -401,7 +416,7 @@ div#mainText {
 }
 
 #emailDiv {
-    padding-top: 30%;
+    /*padding-top: 30%;*/
     width: 85%;
     margin-left: 7%;
 }
@@ -434,7 +449,7 @@ div#mainText {
 }
 
 #featuredResourcesLogo {
-    padding-top: 4%;
+    /*padding-top: 4%;*/
     padding-bottom: 4%;
     text-align: center;
 }
