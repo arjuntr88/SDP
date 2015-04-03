@@ -440,6 +440,12 @@ div#mainText {
   top: -12px;
 }
 
+.freeImg {
+  top: -10px;
+  padding-left: 10px;
+  position: absolute;
+}
+
 #homeList h2 {
     font-size: 14pt;
 }

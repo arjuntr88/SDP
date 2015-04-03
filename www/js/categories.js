@@ -121,22 +121,20 @@ function setResource(dataPassed) {
                                   '<input class="resCheckBox" type="checkbox" name="resCheck" id="checkbox-'+k+'" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility:hidden " />'+
                                   '<label for="checkbox-'+k+'">'+
                                   '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' +
-                                  '<span class="catName">' +catName + '</span>' +
-                                  
-                                  '<h2>' + resource[1] + '</h2>' +
-                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
-                                  '<p>Timings: ' + resource[10] + '</p>';
-
+                                  '<span class="catName">' +catName + '</span>';
                                   if(resource[11]=='YES') {
-                                    res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
+                                    res = res + '<img class="freeImg"  class="ui-li-thumb" src="img/free-icon.svg" />' ;
                                   }
                                   else{
                                     //res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
-                                  }
-                              res = res + '</label>'+
+                                  }    
+                                  res = res + '<h2>' + resource[1] + '</h2>' +
+                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
+                                  '<p>Timings: ' + resource[10] + '</p>' +
+                                  '</label>'+
                                   '</li>' +
-                                  '</ul></div><hr/>'
-              return $(res)
+                                  '</ul></div><hr/>';
+              return $(res);
                                 }).trigger("create");
     
     //update the counter to track what category it is on
@@ -218,22 +216,20 @@ function rigResources(dataPassed2) {
                                   '<input class="resCheckBox" type="checkbox" name="resCheck" id="checkbox-'+counter+'" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility:hidden " />'+
                                   '<label for="checkbox-'+counter+'">'+
                                   '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' +
-                                  '<span class="catName">' +catName + '</span>' +
-                                  
-                                  '<h2>' + resource[1] + '</h2>' +
-                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
-                                  '<p>Timings: ' + resource[10] + '</p>';
-
+                                  '<span class="catName">' +catName + '</span>';
                                   if(resource[11]=='YES') {
-                                    res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
+                                    res = res + '<img class="freeImg"  class="ui-li-thumb" src="img/free-icon.svg" />' ;
                                   }
                                   else{
                                     //res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
-                                  }
-                              res = res + '</label>'+
+                                  }    
+                                  res = res + '<h2>' + resource[1] + '</h2>' +
+                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
+                                  '<p>Timings: ' + resource[10] + '</p>' +
+                                  '</label>'+
                                   '</li>' +
-                                  '</ul></div><hr/>'
-              return $(res)
+                                  '</ul></div><hr/>';
+              return $(res);
                                 }).trigger("create");
         
         }
