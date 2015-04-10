@@ -3,13 +3,13 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 var currentLatitude;
 var currentLongitude;
-var categories = ["clothing", "employment", "food", "healthcare", "housing"];
+var categories = ["housing", "behavioral", "health", "court", "education", "addiction", "financial", "food", "clothing", "childcare", "transport"];
 var usedResource = Array();
 var k = 0;
 var counter = 0;
  
 var zip = JSON.parse(sessionStorage["zipcode"]);
-console.log(zip);
+//console.log(zip);
 $(function  (){
     // bind for the send mail button to make a post request with all the itmes required to be provided
     // it calls[post request] the backend to send mail with the data
@@ -55,7 +55,7 @@ function getZipcodeLocation(){
 /*gets the data from the categories database*/
 function getData() {
     
-    for(var i=0; i<5; i++){
+    for(var i=0; i<categories.length; i++){
         var currentCategory = categories[i];
         
         $.ajax({
@@ -66,6 +66,7 @@ function getData() {
                async: false,
                success: function(data)
                {
+                    //console.log(data);
                     setResource(data);
                },
                error: function(data, status)
@@ -112,24 +113,49 @@ function setResource(dataPassed) {
     
         usedResource.push(closestResource[1]);
     
-    var catName = categories[k].substring(0, 1).toUpperCase() + categories[k].substring(1);
+    var catName =  categories[k];
+    console.log(resource);
     $('#homeList').append(function () {
               var res = '<div>' +
                                   '<ul data-role="listview" data-inset="true">' +
                                   '<li >' + 
                                   
                                   '<input class="resCheckBox" type="checkbox" name="resCheck" id="checkbox-'+k+'" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility:hidden " />'+
-                                  '<label for="checkbox-'+k+'">'+
-                                  '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' +
-                                  '<span class="catName">' +catName + '</span>';
-                                  if(resource[11]=='YES') {
-                                    res = res + '<img class="freeImg"  class="ui-li-thumb" src="img/free-icon.svg" />' ;
+                                  '<label for="checkbox-'+k+'">' +
+                                  '<div class="catImg">';
+                                  
+                                  if(resource[13]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[13] + '.svg" />' ;
+                                  }
+                                  if(resource[14]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[14] + '.svg" />' ;
+                                  }
+                                  if(resource[15]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[15] + '.svg" />' ;
+                                  }
+                                  if(resource[16]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[16] + '.svg" />' ;
+                                  }
+                                  if(resource[17]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[17] + '.svg" />' ;
+                                  }
+                                  if(resource[18]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[18] + '.svg" />' ;
+                                  }
+                                  if(resource[19]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[19] + '.svg" />' ;
+                                  }
+                                  res = res + "</div>" +
+                                  '<span class="catName">' +catName.charAt(0).toUpperCase() + catName.substr(1)+ '</span>';
+
+                                  if(resource[11].toUpperCase().indexOf('FREE')>-1)  {
+                                    res = res + '<img class="freeImg"  class="" src="img/free-icon.svg" />' ;
                                   }
                                   else{
-                                    //res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
+                                    //res = res + '<img id="clothingImg" class="" src="img/' + catName + '.svg" />' 
                                   }    
                                   res = res + '<h2>' + resource[1] + '</h2>' +
-                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
+                                  '<p>' + resource[2] + ', ' + resource[3] + ',<br/> <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
                                   '<p>Timings: ' + resource[10] + '</p>' +
                                   '</label>'+
                                   '</li>' +
@@ -171,7 +197,7 @@ function onSuccess(position) {
 /* onError, the fuction calls the rigResources function to display resources. (THIS IS FOR THE SENIOR DESIGN DEMO) */
 function onError(error) {
     
-        for(var i=0; i<5; i++){
+        for(var i=0; i<categories.length; i++){
             var currentCategory = categories[i];
             
             $.ajax({
@@ -182,6 +208,7 @@ function onError(error) {
                    async: false,
                    success: function(data)
                    {
+                        //console.log(data);
                         rigResources(data);
                    },
                    error: function(data, status)
@@ -206,7 +233,7 @@ function rigResources(dataPassed2) {
         var resource = JSON.parse(dataPassed2[j]);
         
         var catName = categories[counter].substring(0, 1).toUpperCase() + categories[counter].substring(1);
-        
+        console.log(resource);
         if(resource[1] == resourcesToDisplay[counter]){
             $('#homeList').append(function () {
               var res = '<div>' +
@@ -214,17 +241,41 @@ function rigResources(dataPassed2) {
                                   '<li >' + 
                                   
                                   '<input class="resCheckBox" type="checkbox" name="resCheck" id="checkbox-'+counter+'" value="'+catName+':'+resource[1]+":"+resource[2]+":"+resource[3]+':'+resource[6]+'" style="visibility:hidden " />'+
-                                  '<label for="checkbox-'+counter+'">'+
-                                  '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' +
-                                  '<span class="catName">' +catName + '</span>';
-                                  if(resource[11]=='YES') {
-                                    res = res + '<img class="freeImg"  class="ui-li-thumb" src="img/free-icon.svg" />' ;
+                                  '<label for="checkbox-'+counter+'">' +
+                                  '<div class="catImg">';
+                                  
+                                  if(resource[13]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[13] + '.svg" />' ;
+                                  }
+                                  if(resource[14]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[14] + '.svg" />' ;
+                                  }
+                                  if(resource[15]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[15] + '.svg" />' ;
+                                  }
+                                  if(resource[16]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[16] + '.svg" />' ;
+                                  }
+                                  if(resource[17]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[17] + '.svg" />' ;
+                                  }
+                                  if(resource[18]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[18] + '.svg" />' ;
+                                  }
+                                  if(resource[19]!=null){
+                                    res = res + '<img id="clothingImg" class="" src="img/' + resource[19] + '.svg" />' ;
+                                  }
+                                  res = res + "</div>" +
+                                  '<span class="catName">' +catName.charAt(0).toUpperCase() + catName.substr(1)+ '</span>';
+
+                                  if(resource[11].toUpperCase().indexOf('FREE')>-1)  {
+                                    res = res + '<img class="freeImg"  class="" src="img/free-icon.svg" />' ;
                                   }
                                   else{
-                                    //res = res + '<img id="clothingImg" class="ui-li-thumb" src="img/' + catName + '.svg" />' 
+                                    //res = res + '<img id="clothingImg" class="" src="img/' + catName + '.svg" />' 
                                   }    
                                   res = res + '<h2>' + resource[1] + '</h2>' +
-                                  '<p>' + resource[2] + ', ' + resource[3] + ', <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
+                                  '<p>' + resource[2] + ', ' + resource[3] + ',<br/> <a href="tel:'+resource[6]+ '">Ph: ' + resource[6] + '</a></p>'+
                                   '<p>Timings: ' + resource[10] + '</p>' +
                                   '</label>'+
                                   '</li>' +

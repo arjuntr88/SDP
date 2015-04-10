@@ -22,7 +22,7 @@
                     "AudioToolbox.framework": [
                         {
                             "xml": "true",
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "CoreLocation.framework": [
@@ -46,6 +46,10 @@
                         },
                         {
                             "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -71,6 +75,9 @@
             "PACKAGE_NAME": "com.yth.provider"
         },
         "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.yth.provider"
+        },
+        "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.yth.provider"
         }
     },

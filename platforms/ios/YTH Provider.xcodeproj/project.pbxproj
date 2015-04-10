@@ -47,6 +47,7 @@
 		9DEE707EF07947F690A07D58 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615BE6C3BF654682AAA83DDA /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E7AE59F360E644DDB2D6FF07 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF592148B7FF49BDABAF0A1F /* CDVLocation.m */; };
 		B5AF9224C8E24E639FDF3F92 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615EDD9227B848DF84139083 /* CoreLocation.framework */; };
+		22AC8388BC6B4EC09FD3ED0F /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A6D4E2C9DD42E697E87E16 /* CDVVibration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,8 @@
 		CF592148B7FF49BDABAF0A1F /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		A4CD337E6FB3448990B8AED2 /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		615EDD9227B848DF84139083 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		21A6D4E2C9DD42E697E87E16 /* CDVVibration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVVibration.m"; path = "cordova-plugin-vibration/CDVVibration.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		AD52CCF66ACF4B12A42E639B /* CDVVibration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVVibration.h"; path = "cordova-plugin-vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,8 @@
 				E6ED68EAFE0C48D9880A43FE /* CDVNotification.h */,
 				CF592148B7FF49BDABAF0A1F /* CDVLocation.m */,
 				A4CD337E6FB3448990B8AED2 /* CDVLocation.h */,
+				21A6D4E2C9DD42E697E87E16 /* CDVVibration.m */,
+				AD52CCF66ACF4B12A42E639B /* CDVVibration.h */,
 			);
 			name = Plugins;
 			path = "YTH Provider/Plugins";
@@ -426,6 +431,7 @@
 				F54A48889B6F42A4B622F508 /* NSData+Base64.m in Sources */,
 				1DB3788EF2E44804B2690340 /* CDVNotification.m in Sources */,
 				E7AE59F360E644DDB2D6FF07 /* CDVLocation.m in Sources */,
+				22AC8388BC6B4EC09FD3ED0F /* CDVVibration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

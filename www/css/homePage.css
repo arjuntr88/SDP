@@ -96,12 +96,17 @@ div#mainText {
 
 #homePage .ui-content {
   padding: 15%;
-  padding-top: 5%;
+  padding-top: 25%;
 }
 
 #registerPage .ui-content {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+#accountPage .ui-content {
+  padding-top: 15%;
+  
 }
 
 #bestPracPage .ui-content {
@@ -436,8 +441,13 @@ div#mainText {
 	/*padding-top: 20px;
 	padding-left: 20px;
 	opacity: 0.7;*/
-	width: 25%;
+	width: 5%;
   top: -12px;
+  padding-right: 2px;
+}
+
+.catImg {
+  display: inline;
 }
 
 .freeImg {

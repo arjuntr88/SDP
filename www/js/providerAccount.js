@@ -5,12 +5,15 @@ $("#main_body").removeClass("doc");
 
 /*set the email address and content and take the user into the mail application*/
 $(function  (){
+    if(localStorage.getItem("providerEmail")!=null){
+        $("#cEmail").text("Current login Email: "+localStorage.getItem("providerEmail"));
+    }
   $("#emailButton2").click(function() {
                         var emailAddress;
                         var messageBody="";
                         emailAddress = $("#emailAddr1").val();
                         var answersArray = JSON.parse(localStorage.getItem("answersArray"));
-                        
+
                         $.ajax({
                              data: {email: emailAddress},
                              type:"POST",

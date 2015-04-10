@@ -39,6 +39,14 @@ module.exports = [
         "clobbers": [
             "navigator.geolocation"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-vibration/www/vibration.js",
+        "id": "cordova-plugin-vibration.notification",
+        "merges": [
+            "navigator.notification",
+            "navigator"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -46,7 +54,8 @@ module.exports.metadata =
 {
     "emailcomposer": "2.0.2",
     "org.apache.cordova.dialogs": "0.2.11",
-    "org.apache.cordova.geolocation": "0.3.11"
+    "org.apache.cordova.geolocation": "0.3.11",
+    "cordova-plugin-vibration": "0.3.14-dev"
 }
 // BOTTOM OF METADATA
 });

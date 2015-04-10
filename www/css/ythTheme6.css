@@ -55,6 +55,7 @@ div.ui-controlgroup-label {
 .ui-header {
 	background: #333333 !important;
 	height: 90px;
+	top: -1px !important;
 }
 
 /* Separators
@@ -326,7 +327,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 	font-weight: bold;
 }
 .ui-bar-a {
-	border-width: 1px;
+	/*border-width: 1px;*/
 	border-style: solid;
 }
 /* Page and overlay */
@@ -869,7 +870,7 @@ button[disabled],
   
 }
 .ui-listview .ui-li .catName {
-	padding-left: 65px;
+	padding-left: 20px;
 	font-size: 23px;
   	color: #DCB064;
   	font-family: Roboto-Light;
@@ -925,7 +926,7 @@ li img {
   font-family: Arial;
   color: #ffffff;
   text-align: left; 
-  font-size: 1.3em !important;
+  font-size: 1.5em !important;
   background: #33CCFF!important;
   background-size: 155% !important;
   /*padding: 10px 20px 10px 20px;*/
