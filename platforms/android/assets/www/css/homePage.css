@@ -29,7 +29,7 @@ body {
 
 .ui-collapsible-content .ui-li-desc {
   font-size: 2em;
-  word-wrap: break-word;
+  white-space: normal;
 }
 .ui-body-c {
     /*background: #F7F7F7;*/
@@ -96,7 +96,7 @@ div#mainText {
 
 #homePage .ui-content {
   padding: 15%;
-  padding-top: 25%;
+  padding-top: 10%;
 }
 
 #registerPage .ui-content {
@@ -443,6 +443,7 @@ div#mainText {
 	opacity: 0.7;*/
 	width: 5%;
   top: -12px;
+  padding-right: 2px;
 }
 
 .catImg {
@@ -456,11 +457,13 @@ div#mainText {
 }
 
 #homeList h2 {
-    font-size: 14pt;
+    font-size: 1.5em ;
+    white-space: initial;
 }
 
 #homeList p {
-    font-size: 12pt;
+    font-size: 1.2em;
+    white-space: initial;
 }
 
 #featuredResourcesLogo {

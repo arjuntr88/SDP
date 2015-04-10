@@ -51,6 +51,8 @@
 /media/data/scu/yth/SDP/platforms/android/assets/www/spec \
 /media/data/scu/yth/SDP/platforms/android/assets/www/spec.html \
 /media/data/scu/yth/SDP/platforms/android/assets/www/toolsResources.html \
+/media/data/scu/yth/SDP/platforms/android/assets/www/update_profile.html \
+/media/data/scu/yth/SDP/platforms/android/assets/www/weekly_tips.html \
 /media/data/scu/yth/SDP/platforms/android/assets/www/zipcode.html \
 /media/data/scu/yth/SDP/platforms/android/assets/www/css/homePage.css \
 /media/data/scu/yth/SDP/platforms/android/assets/www/css/images \
@@ -513,7 +515,7 @@
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/health.svg \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/Healthcare.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/healthProvYTHLogo.png \
-/media/data/scu/yth/SDP/platforms/android/assets/www/img/home-alternate-icon.svg \
+/media/data/scu/yth/SDP/platforms/android/assets/www/img/home.svg \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/Housing.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/housing.svg \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/logo.png \
@@ -565,6 +567,7 @@
 /media/data/scu/yth/SDP/platforms/android/assets/www/js/questionnaireAnswers.js \
 /media/data/scu/yth/SDP/platforms/android/assets/www/js/registerAccount.js \
 /media/data/scu/yth/SDP/platforms/android/assets/www/js/submitResults.js \
+/media/data/scu/yth/SDP/platforms/android/assets/www/js/updateProvider.js \
 /media/data/scu/yth/SDP/platforms/android/assets/www/js/zipcode.js \
 /media/data/scu/yth/SDP/platforms/android/assets/www/plugins/cordova-plugin-dialogs \
 /media/data/scu/yth/SDP/platforms/android/assets/www/plugins/cordova-plugin-vibration \
