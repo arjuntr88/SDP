@@ -40,10 +40,10 @@ function loadData(data){
          var percentage = (v[j][1]*100/total);
          //listString+='<li>'+ v[j][0] +' : '+percentage.toFixed(0)+'%</li>';
          listString+='<li>'+percentage.toFixed(0)+'% '+v[j][0]+
-         '<br/><svg width="100%" height="20">'+
-          '<rect width="'+percentage.toFixed(0)+'%" height="18" style="fill:rgb(51, 181, 229);stroke-width:0;stroke:rgb(0,0,0)" />'+
-          '</svg>' +
-         '</li>'
+         /*'<br/><svg width="100%" height="20">'+
+          '<rect width="'+percentage.toFixed(0)+'%" height="18" style="fill:rgb(51, 181, 229);stroke-width:0;stroke:rgb(194, 232, 247)" />'+
+          '</svg>' +*/
+         '</li>';
         }
 
         listString+='</ul>';

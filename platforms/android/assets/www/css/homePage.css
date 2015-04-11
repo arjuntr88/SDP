@@ -94,9 +94,15 @@ div#mainText {
   /*margin-bottom: 1em;*/
 }
 
+.homeBackground {
+    background: url(../img/street-photo-bg.png)  !important;
+  background-size: cover;
+  background-position-x: center !important;
+}
 #homePage .ui-content {
   padding: 15%;
   padding-top: 10%;
+
 }
 
 #registerPage .ui-content {

@@ -1,0 +1,46 @@
+<!-- homePage.html : content to create the initial screen seen upon page load. Here the user can select to
+    either view tools and resources or go to the medical questionnaire. -->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="height=device-height, width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+        <link rel="stylesheet" href="css/homePage.css" />
+        <link rel="stylesheet" href="css/ythTheme6.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <title>Home</title>
+    </head>
+    <style type = "text/css">
+    	.doc{display:none;}
+    </style>
+    <body id = "main_body" class = "doc">
+       <div id="bestPracPage" data-role="page">
+            <div data-role="header" data-position="fixed">
+                 <img src="./img/SCLogo.png" class="ui-logo" />
+
+            <a class="ui-btn-left"  href="javascript:history.back(1) " data-theme="a" ></a>
+            <a href="./homePage.html"  data-iconpos="right" class="ui-btn-right ui-btn-home" style="float: right; margin-right:10px;"></a>
+            </div>
+            <div data-role="content">
+                <h1>Sign Up!</h1>
+                <p>Sign up for weekly tips by by sending a text to ...</p>
+            </div>
+
+            <!-- Create footer for user to select finish button and return to home page -->
+                <div id="footerBottom" data-role="footer" class="ui-bar">
+                   <a href="./homePage.html" data-role="button" data-icon="finish-btn" data-iconpos="right" class="ui-btn-right ui-btn-finish" style="float: right; margin-right:10px;">Finish</a>
+                </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+        <script type="text/javascript" src="js/homePage.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

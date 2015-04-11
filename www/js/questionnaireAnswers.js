@@ -18,6 +18,7 @@ $(function  (){
                async: false,
                success: function(data)
                {
+                  console.log(data);
                   loadData(data);
                },
                error: function(data, status)

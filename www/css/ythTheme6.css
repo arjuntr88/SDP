@@ -932,9 +932,6 @@ li img {
     /*background-image: url('../img/mqSquare.png') !important;*/
     /*background-size: 100% 100% !important;*/
 
-    -webkit-border-radius: 3;
-  -moz-border-radius: 3;
-  border-radius: 3px;
   font-family: Arial;
   color: #ffffff;
   text-align: left; 
@@ -943,7 +940,12 @@ li img {
   background-size: 155% !important;
   /*padding: 10px 20px 10px 20px;*/
   text-decoration: none;
+  white-space: normal;
   /*margin-bottom: 1em;*/
+}
+
+.homePageButton .ui-btn-text {
+	white-space: normal;
 }
 
 .homePageButton .ui-icon-right-btn {

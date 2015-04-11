@@ -532,6 +532,7 @@
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/sendNewArrow.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/sendSquare.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/sexualHealthQuest.png \
+/media/data/scu/yth/SDP/platforms/android/assets/www/img/street-photo-bg.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/StreetConnectForYouthLogo.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/TandRNewArrow.png \
 /media/data/scu/yth/SDP/platforms/android/assets/www/img/toolResImg.png \
