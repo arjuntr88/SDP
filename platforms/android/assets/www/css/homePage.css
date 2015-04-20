@@ -28,7 +28,7 @@ body {
 
 
 .ui-collapsible-content .ui-li-desc {
-  font-size: 2em;
+  font-size: 1.2em;
   white-space: normal;
 }
 .ui-body-c {
@@ -44,7 +44,7 @@ body {
     padding-bottom: 10%;
 }
 .mainBar {
-    width: 95%;
+    
     margin-left: auto;
     margin-right: auto;
     padding-top: 1%;
@@ -52,7 +52,7 @@ body {
 }
 
 .continueBtn {
-  width: 35% !important;
+  width: 40% !important;
 }
 
 #toolsResBar {
@@ -392,6 +392,8 @@ div#mainText {
 #emailP {
     font-size: 14pt;
     text-align: center;
+    white-space: initial;
+    padding: 10px;
 }
 
 #emailAddr1 {
@@ -433,11 +435,12 @@ div#mainText {
 }
 
 #greenBar1 {
-	background-color: #8cc63f;
+	background-color: #8cc63f !important;
 	border-color: #8cc63f;
 	text-shadow: 0 0 0 !important;
     font-size: 14pt;
 }
+
 
 #featuredResources {
     text-align: center;
@@ -447,7 +450,7 @@ div#mainText {
 	/*padding-top: 20px;
 	padding-left: 20px;
 	opacity: 0.7;*/
-	width: 5%;
+	width: 6%;
   top: -12px;
   padding-right: 2px;
 }

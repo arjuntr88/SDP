@@ -12,6 +12,8 @@ $(function  (){
     $("#emailButton").click(function() {
                         var emailAddress;
                         var messageBody="";
+                        $(this).find(".ui-btn-text").text("Sending");
+                        $(this).attr("disabled", true);
                         emailAddress = $("#emailAddr1").val();
                         var email_check = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i;
                         if(!email_check.test(emailAddress)){

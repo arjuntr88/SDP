@@ -69,25 +69,36 @@ $(function  (){
 });
 
 function loadData(data){
+    var q = 1;
     for (var i = 0; i <= data.length - 1; i++) {
-      
+      if(i<=3){
+        section = 1;
+        q=(i+1);
+      }else if(i>3 && i<=8){
+        section = 2;
+        q=((i+1)-4);
+      }else{
+        section = 3;
+        q=((i+1)-9);
+      }
       var answers = data[i][1].split(';');
       var formString="";
       formString = '<form id="question-'+i+'">'+
           '<fieldset data-role="controlgroup" data-type="vertical">'+
-          '<li class="ui-li ui-li-divider ui-btn ui-bar-a ui-corner-top"  data-role="list-divider">'+(i+1)+'. '+data[i][0]+'</li>';
+          '<li class="blue-bg ui-li ui-li-divider ui-btn question-font ui-bar-a ui-corner-top"  data-role="list-divider">'+(q)+'. '+data[i][0]+'</li>';
        
       for (var j = 0; j <= answers.length - 1; j++) {
        // console.log(alphabet.charAt(j));
         
           formString+='<input type="radio" name="radio-choice-'+i+'" id="radio-choice-'+i+alphabet.charAt(j)+'" value="'+answers[j]+'">'+
-          '<label for="radio-choice-'+i+alphabet.charAt(j)+'">'+answers[j]+'</label>';
+          '<label for="radio-choice-'+i+alphabet.charAt(j)+'" class="question-font">'+answers[j]+'</label>';
          
         
       };
       formString += '</fieldset>'+
           '</form>';
-          
-      $("#main-content").append(formString).trigger("create");
+
+      //q++;
+      $("#main-content"+section).append(formString).trigger("create");
     };
   }

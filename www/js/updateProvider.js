@@ -5,14 +5,11 @@ $("#main_body").removeClass("doc");
 
 /*set the email address and content and take the user into the mail application*/
 $(function  (){
-    if(localStorage.getItem("providerEmail")!=null){
-        $("#cEmail").text("Current login Email: "+localStorage.getItem("providerEmail"));
-    }
   $("#emailButton2").click(function() {
                         
                         var messageBody="";
                         messageBody = $("#emailAddr1").val();
-                        
+                        console.log("here");
                         $.ajax({
                              data: {mailto: "arjun200034@gmail.com", message: messageBody, subject : "Update provider information"},
                              type:"POST",

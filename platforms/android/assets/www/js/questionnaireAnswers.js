@@ -75,13 +75,13 @@ function loadData(data){
       var formString="";
       formString = '<form id="question-'+i+'">'+
           '<fieldset data-role="controlgroup" data-type="vertical">'+
-          '<li class="ui-li ui-li-divider ui-btn ui-bar-a ui-corner-top"  data-role="list-divider">'+(i+1)+'. '+data[i][0]+'</li>';
+          '<li class="blue-bg ui-li ui-li-divider ui-btn question-font ui-bar-a ui-corner-top"  data-role="list-divider">'+(i+1)+'. '+data[i][0]+'</li>';
        
       for (var j = 0; j <= answers.length - 1; j++) {
        // console.log(alphabet.charAt(j));
         
           formString+='<input type="radio" name="radio-choice-'+i+'" id="radio-choice-'+i+alphabet.charAt(j)+'" value="'+answers[j]+'">'+
-          '<label for="radio-choice-'+i+alphabet.charAt(j)+'">'+answers[j]+'</label>';
+          '<label for="radio-choice-'+i+alphabet.charAt(j)+'" class="question-font">'+answers[j]+'</label>';
          
         
       };

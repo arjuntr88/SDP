@@ -35,7 +35,7 @@ function loadData(data){
 
       if(k !== "total"){
          listString = '<ul data-role="listview" data-inset="true" class="aggregation-listview">'+
-        '<li>'+ i++ +'. '+k+'</li>';
+        '<li class="blue-bg">'+ i++ +'. '+k+'</li>';
         for (var j = 0; j <= v.length - 1; j++) {
          var percentage = (v[j][1]*100/total);
          //listString+='<li>'+ v[j][0] +' : '+percentage.toFixed(0)+'%</li>';
