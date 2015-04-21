@@ -71,7 +71,8 @@ function getData() {
                },
                error: function(data, status)
                {
-                    alert("Connection Failed");
+                    //alert("Connection Failed");
+                    $("#homeList").append("<h3>Unable to load resources</h3>");
            
                }
            });
@@ -80,7 +81,7 @@ function getData() {
 }
 
 function setResource(dataPassed, category) {
-    var closestResourceLength = 1.00;
+    var closestResourceLength = 10.00;
     var closestResource;
     var resourceLat;
     var resourceLong;
@@ -232,7 +233,7 @@ function onError(error) {
 function rigResources(dataPassed2, category) {
 
     $('#busy').hide();
-    var closestResourceLength = 1.00;
+    var closestResourceLength = 10.00;
     var resourcesToDisplay = ["Bill Wilson Drop-In Center", "Bill Wilson Center Peacock Commons", "CityTeam Ministries", "Bill Wilson Center", "West Valley Community Services"];
     
 

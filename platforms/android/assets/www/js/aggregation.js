@@ -26,16 +26,27 @@ $(function  (){
 });
 
 function loadData(data){
-    var i=1, total = data.total;
+    var i=0, total = data.total,q=1;
     var listString='<ul data-role="listview" data-inset="true" class="aggregation-listview">'+
       '<li data-role="list-divider" >Total number of responses: '+total+'</li></ul>';
     $("#main-content").append(listString).trigger("create");
+    console.log(data);
     $.each(data, function(k, v) {
     //display the key and value pair
-
+      if(i<=3){
+        section = 1;
+        q=(i+1);
+      }else if(i>3 && i<=8){
+        section = 2;
+        q=((i+1)-4);
+      }else{
+        section = 3;
+        q=((i+1)-9);
+      }
       if(k !== "total"){
          listString = '<ul data-role="listview" data-inset="true" class="aggregation-listview">'+
-        '<li class="blue-bg">'+ i++ +'. '+k+'</li>';
+        '<li class="blue-bg">'+ q +'. '+k+'</li>';
+        i++;
         for (var j = 0; j <= v.length - 1; j++) {
          var percentage = (v[j][1]*100/total);
          //listString+='<li>'+ v[j][0] +' : '+percentage.toFixed(0)+'%</li>';
@@ -47,7 +58,7 @@ function loadData(data){
         }
 
         listString+='</ul>';
-        $("#main-content").append(listString).trigger("create");
+        $("#main-content"+section).append(listString).trigger("create");
         
       }
     });

@@ -3,13 +3,30 @@
 $(function  (){
 	var answers = localStorage.getItem("answersArray");
 	var answersArray = JSON.parse(answers);
-	console.log('here:'+answersArray);
+	
 	for (var i = 0; i < answersArray.length; i++) {
-		answerArray = answersArray[i].split(':');
-		var listString = '<ul data-role="listview" data-inset="true">'+
-		'<li data-role="list-divider" >'+answerArray[0]+'</li>'+
-		'<li><h2>'+answerArray[1]+'</h2></li></ul>';
-		$("#questionAnswers").append(listString);
+    if(i<4){
+      answerArray = answersArray[i].split(':');
+      var listString = '<ul data-role="listview" data-inset="true">'+
+      '<li data-role="list-divider" >'+answerArray[0]+'</li>'+
+      '<li><h2>'+answerArray[1]+'</h2></li></ul>';
+      $("#questionAnswers1").append(listString);
+    }
+    else if(i>3 && i<9){
+      answerArray = answersArray[i].split(':');
+      var listString = '<ul data-role="listview" data-inset="true">'+
+      '<li data-role="list-divider" >'+answerArray[0]+'</li>'+
+      '<li><h2>'+answerArray[1]+'</h2></li></ul>';
+      $("#questionAnswers2").append(listString);
+    }
+    else{
+      answerArray = answersArray[i].split(':');
+      var listString = '<ul data-role="listview" data-inset="true">'+
+      '<li data-role="list-divider" >'+answerArray[0]+'</li>'+
+      '<li><h2>'+answerArray[1]+'</h2></li></ul>';
+      $("#questionAnswers3").append(listString);
+    }
+		
 	};
 
 

@@ -71,7 +71,8 @@ function getData() {
                },
                error: function(data, status)
                {
-                    alert("Connection Failed");
+                    //alert("Connection Failed");
+                    $("#homeList").append("<h3>Unable to load resources</h3>");
            
                }
            });
