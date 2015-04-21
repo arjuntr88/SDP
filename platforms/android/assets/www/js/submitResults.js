@@ -32,6 +32,7 @@ $(function  (){
 
   $("#submit").click(function() {
   	var answers = localStorage.getItem("answersArray");	
+    console.log(answers);
   	var providerEmail = localStorage.getItem("providerEmail");
   	//inserting the answers in database
 	$.ajax({
