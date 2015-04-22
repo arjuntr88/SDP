@@ -6,21 +6,21 @@ $(function  (){
 	
 	for (var i = 0; i < answersArray.length; i++) {
     if(i<4){
-      answerArray = answersArray[i].split(':');
+      answerArray = answersArray[i].split(':$:');
       var listString = '<ul data-role="listview" data-inset="true">'+
       '<li data-role="list-divider" >'+answerArray[0]+'</li>'+
       '<li><h2>'+answerArray[1]+'</h2></li></ul>';
       $("#questionAnswers1").append(listString);
     }
     else if(i>3 && i<9){
-      answerArray = answersArray[i].split(':');
+      answerArray = answersArray[i].split(':$:');
       var listString = '<ul data-role="listview" data-inset="true">'+
       '<li data-role="list-divider" >'+answerArray[0]+'</li>'+
       '<li><h2>'+answerArray[1]+'</h2></li></ul>';
       $("#questionAnswers2").append(listString);
     }
     else{
-      answerArray = answersArray[i].split(':');
+      answerArray = answersArray[i].split(':$:');
       var listString = '<ul data-role="listview" data-inset="true">'+
       '<li data-role="list-divider" >'+answerArray[0]+'</li>'+
       '<li><h2>'+answerArray[1]+'</h2></li></ul>';
@@ -49,7 +49,7 @@ $(function  (){
 				var answersArray = JSON.parse(localStorage.getItem("answersArray"));
                 var messageBody="<h2>Questionnaire Results</h2>";        
                 for (var i = 0; i < answersArray.length; i++) {
-                    var answerArray = answersArray[i].split(':');
+                    var answerArray = answersArray[i].split(':$:');
                     messageBody = messageBody +'<b>'+ answerArray[0] + "</b><br/> Answer: " + answerArray[1]  + "<br/>";
                     
                 }

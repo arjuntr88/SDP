@@ -34,13 +34,15 @@ $(function  (){
     $("[id*=question-]").each(function(){
       var question = $(this).find("li").text();
       var answer = $(this).find("input:checked").val();
+
       if( answer!=null)
-        answersArray.push(question+':'+answer);//answersArray.push({ question : answer });
+        answersArray.push(question+':$:'+answer);//answersArray.push({ question : answer });
       else
-        answersArray.push(question+':No answer selected');
+        answersArray.push(question+':$:No answer selected');
         //answersArray.push({ question: answer });
 
     });
+
     localStorage.setItem("answersArray", JSON.stringify(answersArray));
     
     for(i=0; i<numOfQuestions; i++){
